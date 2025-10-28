@@ -1,5 +1,4 @@
 import json
-from pathlib import Path
 
 """
 What does this Programm need to do:

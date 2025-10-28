@@ -18,15 +18,6 @@ def buildFile(file):
 print(nachricht)
 """
 
-def findRelativePath() -> str:
-    currentFile = Path(__file__).resolve()
-    # Walk up until we find 'src' in the path
-    for parent in currentFile.parents:
-        if parent.name == "src":
-            projectRoot = parent.parent
-            break
-    return str(currentFile.parent.relative_to(projectRoot))
-
 def createMaschienenschluessel():
     with open(f"{RelativePath}vorlage.json", "r") as file:
         vorlage = json.load(file)
@@ -101,10 +92,7 @@ def createMaschienenschluesselFromExample(vorlage):
     return newFile
 
 def main():
-    print(findRelativePath())
     createMaschienenschluessel()
-
-RelativePath = findRelativePath() + "/"
 
 if __name__ == "__main__":
     main()

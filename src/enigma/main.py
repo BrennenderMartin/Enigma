@@ -18,7 +18,7 @@ print(nachricht)
 """
 
 def createMaschienenschluessel():
-    with open(f"{RelativePath}vorlage.json", "r") as file:
+    with open("src/enigma/vorlage.json", "r") as file:
         vorlage = json.load(file)
     
     newFile = {}

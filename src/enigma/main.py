@@ -18,9 +18,9 @@ def buildFile(file):
 print(nachricht)
 """
 
-def create_enigma(filePath: str, text: str):
+def create_enigma(filePath: str, name: str):
     with open(f"src/enigma/{filePath}", "r") as file:
-        vorlage = json.load(file)
+        vorlage: dict = json.load(file)
     """ Iteration over the vorlage.json
     for item in vorlage:
         print(f"{item}: ")
@@ -32,19 +32,17 @@ def create_enigma(filePath: str, text: str):
     """
     
     enigma = Enigma(
-        text, 
-        vorlage["Datum"],
-        vorlage["Walzenlage"],
-        vorlage["Ringstellung"],
-        vorlage["Steckerverbindung"],
-        vorlage["Kenngruppen"]
+        name, 
+        vorlage
     )
     print(
-        enigma.encode("Hello World")
+        enigma,
+        enigma.encode("Hello World"),"\n",
+        enigma
     )
 
 def main():
-    create_enigma("vorlage.json", "''")
+    create_enigma("vorlage.json", "Enigma-M3")
 
 if __name__ == "__main__":
     main()

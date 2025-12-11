@@ -1,0 +1,558 @@
+{
+    "Enigma-A und B": [
+        {
+            "walze": "I (C)",
+            "wiring": "DMTWSILRUYQNKFEJCAZBPGXOHV",
+            "einführungsdatum": "1924",
+            "modell": ["A", "B"]
+        },
+        {
+            "walze": "II (C)",
+            "wiring": "HQZGPJTMOBLNCIFDYAWVEUSRKX",
+            "einführungsdatum": "1924",
+            "modell": ["A", "B"]
+        },
+        {
+            "walze": "III (C)",
+            "wiring": "UQNTLSZFMREHDPXKIBVYGJCWOA",
+            "einführungsdatum": "1924",
+            "modell": ["A", "B"]
+        }
+    ],
+
+    "Enigma-D": [
+        {
+            "walze": "ETW (D)",
+            "wiring": "JWULCMNOHPQZYXIRADKEGVBTSF",
+            "einführungsdatum": "1926",
+            "modell": "Enigma-D"
+        },
+        {
+            "walze": "UKW (D)",
+            "wiring": "IMETCGFRAYSQBZXWLHKDVUPOJN",
+            "einführungsdatum": "1926",
+            "modell": "Enigma-D"
+        },
+        {
+            "walze": "I (D)",
+            "wiring": "LPGSZMHAEOQKVXRFYBUTNICJDW",
+            "einführungsdatum": "1926",
+            "modell": "Enigma-D"
+        },
+        {
+            "walze": "II (D)",
+            "wiring": "SLVGBTFXJQOHEWIRZYAMKPCNDU",
+            "einführungsdatum": "1926",
+            "modell": "Enigma-D"
+        },
+        {
+            "walze": "III (D)",
+            "wiring": "CJGDPSHKTURAWZXFMYNQOBVLIE",
+            "einführungsdatum": "1926",
+            "modell": "Enigma-D"
+        }
+    ],
+
+    "Enigma-Z": [
+        {
+            "walze": "ETW",
+            "wiring": "1 2 3 4 5 6 7 8 9 0",
+            
+            "einführungsdatum": "1930",
+            "modell": "Enigma-Z"
+        },
+        {
+            "walze": "UKW",
+            "wiring": "5 0 7 9 1 8 3 6 4 2",
+            "einführungsdatum": "1930",
+            "modell": "Enigma-Z"
+        },
+        {
+            "walze": "I",
+            "wiring": "6 4 1 8 2 7 0 3 5 9",
+            "kerbe": "9",
+            "einführungsdatum": "1930",
+            "modell": "Enigma-Z"
+        },
+        {
+            "walze": "II",
+            "wiring": "5 8 4 1 0 9 7 6 3 2",
+            "kerbe": "9",
+            "einführungsdatum": "1930",
+            "modell": "Enigma-Z"
+        },
+        {
+            "walze": "III",
+            "wiring": "3 5 8 1 6 2 0 7 9 4",
+            "kerbe": "9",
+            "einführungsdatum": "1930",
+            "modell": "Enigma-Z"
+        }
+    ],
+
+    "Reichsbahn": [
+        {
+            "walze": "ETW",
+            "wiring": "QWERTZUIOASDFGHJKPYXCVBNML",
+            "einführungsdatum": "7. Februar 1941",
+            "modell": "Reichsbahn"
+        },
+        {
+            "walze": "UKW",
+            "wiring": "QYHOGNECVPUZTFDJAXWMKISRBL",
+            "einführungsdatum": "7. Februar 1941",
+            "modell": "Reichsbahn"
+        },
+        {
+            "walze": "I",
+            "wiring": "JGDQOXUSCAMIFRVTPNEWKBLZYH",
+            "einführungsdatum": "7. Februar 1941",
+            "modell": "Reichsbahn"
+        },
+        {
+            "walze": "II",
+            "wiring": "NTZPSFBOKMWRCJDIVLAEYUXHGQ",
+            "einführungsdatum": "7. Februar 1941",
+            "modell": "Reichsbahn"
+        },
+        {
+            "walze": "III",
+            "wiring": "JVIUBHTCDYAKEQZPOSGXNRMWFL",
+            "einführungsdatum": "7. Februar 1941",
+            "modell": "Reichsbahn"
+        }
+    ],
+
+    "Enigma": [
+        {
+            "walze": "ETW",
+            "wiring": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+            "einführungsdatum": "1930",
+            "modell": ["1", "M3", "M4"]
+        },
+        {
+            "walze": "UKW A",
+            "wiring": "EJMZALYXVBWFCRQUONTSPIKHGD",
+            "einführungsdatum": "",
+            "modell": ["1", "M3", "M4"]
+        },
+        {
+            "walze": "UKW B",
+            "wiring": "YRUHQSLDPXNGOKMIEBFZCWVJAT",
+            "einführungsdatum": "2. November 1937",
+            "modell": ["1", "M3", "M4"]
+        },
+        {
+            "walze": "UKW C",
+            "wiring": "FVPJIAOYEDRZXWGCTKUQSBNMHL",
+            "einführungsdatum": "1940/41",
+            "modell": ["1", "M3", "M4"]
+        },
+        {
+            "walze": "I",
+            "wiring": "EKMFLGDQVZNTOWYHXUSPAIBRCJ",
+            "kerbe": "Q",
+            "einführungsdatum": "1930",
+            "modell": ["1", "M3", "M4"]
+        },
+        {
+            "walze": "II",
+            "wiring": "AJDKSIRUXBLHWTMCQGZNPYFVOE",
+            "kerbe": "E",
+            "einführungsdatum": "1930",
+            "modell": ["1", "M3", "M4"]
+        },
+        {
+            "walze": "III",
+            "wiring": "BDFHJLCPRTXVZNYEIWGAKMUSQO",
+            "kerbe": "V",
+            "einführungsdatum": "1930",
+            "modell": ["1", "M3", "M4"]
+        },
+        {
+            "walze": "IV",
+            "wiring": "ESOVPZJAYQUIRHXLNFTGKDCMWB",
+            "kerbe": "J",
+            "einführungsdatum": "15. Dezember 1938",
+            "modell": ["M3", "M4"]
+        },
+        {
+            "walze": "V",
+            "wiring": "VZBRGITYUPSDNHLXAWMJQOFECK",
+            "kerbe": "Z",
+            "einführungsdatum": "15. Dezember 1938",
+            "modell": ["M3", "M4"]
+        },
+        {
+            "walze": "VI",
+            "wiring": "JPGVOUMFYQBENHZRDKASXLICTW",
+            "kerbe": ["Z", "M"],
+            "einführungsdatum": "1939",
+            "modell": ["M3", "M4"]
+        },
+        {
+            "walze": "VII",
+            "wiring": "NZJHGRCXMYSWBOUFAIVLPEKQDT",
+            "kerbe": ["Z", "M"],
+            "einführungsdatum": "1939",
+            "modell": ["M3", "M4"]
+        },
+        {
+            "walze": "VIII",
+            "wiring": "FKQHTLXOCBJSPDZRAMEWNIUYGV",
+            "kerbe": ["Z", "M"],
+            "einführungsdatum": "1939",
+            "modell": ["M3", "M4"]
+        }
+    ],
+
+    "Enigma-M4": [
+        {
+            "walze": "ETW",
+            "wiring": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+            "einführungsdatum": "",
+            "modell": "M4"
+        },
+        {
+            "walze": "UKW Bruno",
+            "wiring": "ENKQAUYWJICOPBLMDXZVFTHRGS",
+            "einführungsdatum": "1. Februar 1942",
+            "modell": "M4"
+        },
+        {
+            "walze": "UKW Cäsar",
+            "wiring": "RDOBJNTKVEHMLFCWZAXGYIPSUQ",
+            "einführungsdatum": "1. Juli 1943",
+            "modell": "M4"
+        },
+        {
+            "walze": "Beta",
+            "wiring": "LEYJVCNIXWPBQMDRTAKZGFUHOS",
+            "einführungsdatum": "1. Februar 1942",
+            "modell": "M4"
+        },
+        {
+            "walze": "Gamma",
+            "wiring": "FSOKANUERHMBTIYCWLQPZXVGJD",
+            "einführungsdatum": "1. Juli 1943",
+            "modell": "M4"
+        }
+    ],
+
+    "Schweizer K": [
+        {
+            "walze": "ETW (K)",
+            "wiring": "QWERTZUIOASDFGHJKPYXCVBNML",
+            "einführungsdatum": "Februar 1939",
+            "modell": "Schweizer K"
+        },
+        {
+            "walze": "UKW (K)",
+            "wiring": "IMETCGFRAYSQBZXWLHKDVUPOJN",
+            "einführungsdatum": "Februar 1939",
+            "modell": "Schweizer K"
+        },
+        {
+            "walze": "I (K)",
+            "wiring": "PEZUOHXSCVFMTBGLRINQJWAYDK",
+            "einführungsdatum": "Februar 1939",
+            "modell": "Schweizer K"
+        },
+        {
+            "walze": "II (K)",
+            "wiring": "ZOUESYDKFWPCIQXHMVBLGNJRAT",
+            "einführungsdatum": "Februar 1939",
+            "modell": "Schweizer K"
+        },
+        {
+            "walze": "III (K)",
+            "wiring": "EHRVXGAOBQUSIMZFLYNWKTPDJC",
+            "einführungsdatum": "Februar 1939",
+            "modell": "Schweizer K"
+        }
+    ],
+
+    "Tirpitz": [
+        {
+            "walze": "ETW (T)",
+            "wiring": "KZROUQHYAIGBLWVSTDXFPNMCJE",
+            "einführungsdatum": "1943",
+            "modell": "Tirpitz"
+        },
+        {
+            "walze": "UKW (T)",
+            "wiring": "GEKPBTAUMOCNILJDXZYFHWVQSR",
+            "einführungsdatum": "1943",
+            "modell": "Tirpitz"
+        },
+        {
+            "walze": "I (T)",
+            "wiring": "KPTYUELOCVGRFQDANJMBSWHZXI",
+            "kerbe": ["E", "K", "Q", "W", "Z"],
+            "einführungsdatum": "1943",
+            "modell": "Tirpitz"
+        },
+        {
+            "walze": "II (T)",
+            "wiring": "UPHZLWEQMTDJXCAKSOIGVBYFNR",
+            "kerbe": ["F", "L", "R", "W", "Z"],
+            "einführungsdatum": "1943",
+            "modell": "Tirpitz"
+        },
+        {
+            "walze": "III (T)",
+            "wiring": "QUDLYRFEKONVZAXWHMGPJBSICT",
+            "kerbe": ["E", "K", "Q", "W", "Z"],
+            "einführungsdatum": "1943",
+            "modell": "Tirpitz"
+        },
+        {
+            "walze": "IV (T)",
+            "wiring": "CIWTBKXNRESPFLYDAGVHQUOJZM",
+            "kerbe": ["F", "L", "R", "W", "Z"],
+            "einführungsdatum": "1943",
+            "modell": "Tirpitz"
+        },
+        {
+            "walze": "V (T)",
+            "wiring": "UAXGISNJBVERDYLFZWTPCKOHMQ",
+            "kerbe": ["C", "F", "K", "R", "Y"],
+            "einführungsdatum": "1943",
+            "modell": "Tirpitz"
+        },
+        {
+            "walze": "VI (T)",
+            "wiring": "XFUZGALVHCNYSEWQTDMRBKPIOJ",
+            "kerbe": ["E", "I", "M", "Q", "X"],
+            "einführungsdatum": "1943",
+            "modell": "Tirpitz"
+        },
+        {
+            "walze": "VII (T)",
+            "wiring": "BJVFTXPLNAYOZIKWGDQERUCHSM",
+            "kerbe": ["C", "F", "K", "R", "Y"],
+            "einführungsdatum": "1943",
+            "modell": "Tirpitz"
+        },
+        {
+            "walze": "VIII (T)",
+            "wiring": "YMTPNZHWKODAJXELUQVGCBISFR",
+            "kerbe": ["E", "I", "M", "Q", "X"],
+            "einführungsdatum": "1943",
+            "modell": "Tirpitz"
+        }
+    ],
+
+    "Enigma-G": {
+        "G": {
+            "walze": "ETW (G)",
+            "wiring": "QWERTZUIOASDFGHJKPYXCVBNML",
+            "einführungsdatum": "1931",
+            "modell": "Enigma-G"
+        },
+
+        "G31": [
+            {
+                "walze": "UKW (G31)",
+                "wiring": "IMETCGFRAYSQBZXWLHKDVUPOJN",
+                "einführungsdatum": "1931",
+                "modell": "Enigma-G"
+            },
+            {
+                "walze": "I (G31)",
+                "wiring": "LPGSZMHAEOQKVXRFYBUTNICJDW",
+                "kerbe": ["A","B","C","E","F","G","I","K","L","O","P","Q","S","U","V","W","Z"],
+                "einführungsdatum": "1931",
+                "modell": "Enigma-G"
+            },
+            {
+                "walze": "II (G31)",
+                "wiring": "SLVGBTFXJQOHEWIRZYAMKPCNDU",
+                "kerbe": ["A","C","D","F","G","H","K","M","N","Q","S","T","V","Y","Z"],
+                "einführungsdatum": "1931",
+                "modell": "Enigma-G"
+            },
+            {
+                "walze": "III (G31)",
+                "wiring": "CJGDPSHKTURAWZXFMYNQOBVLIE",
+                "kerbe": ["A","C","D","F","G","H","K","M","N","Q","S","T","V","Y","Z"],
+                "einführungsdatum": "1931",
+                "modell": "Enigma-G"
+            }
+        ],
+
+        "G111": [
+            {
+                "walze": "UKW (G111)",
+                "wiring": "IMETCGFRAYSQBZXWLHKDVUPOJN",
+                "einführungsdatum": "",
+                "modell": "Enigma-G"
+            },
+            {
+                "walze": "I (G111)",
+                "wiring": "WLRHBQUNDKJCZSEXOTMAGYFPVI",
+                "kerbe": ["A","B","C","E","F","G","I","K","L","O","P","Q","S","U","V","W","Z"],
+                "einführungsdatum": "",
+                "modell": "Enigma-G"
+            },
+            {
+                "walze": "II (G111)",
+                "wiring": "TFJQAZWMHLCUIXRDYGOEVBNSKP",
+                "kerbe": ["A","C","D","F","G","H","K","M","N","Q","S","T","V","Y","Z"],
+                "einführungsdatum": "",
+                "modell": "Enigma-G"
+            },
+            {
+                "walze": "III (G111)",
+                "wiring": "?",
+                "kerbe": ["A","C","D","F","G","H","K","M","N","Q","S","T","V","Y","Z"],
+                "einführungsdatum": "",
+                "modell": "Enigma-G"
+            },
+            {
+                "walze": "IV (G111)",
+                "wiring": "?",
+                "einführungsdatum": "",
+                "modell": "Enigma-G"
+            },
+            {
+                "walze": "V (G111)",
+                "wiring": "QTPIXWVDFRMUSLJOHCANEZKYBG",
+                "einführungsdatum": "",
+                "modell": "Enigma-G"
+            }
+        ],
+
+        "G260": [
+            {
+                "walze": "UKW (G260)",
+                "wiring": "IMETCGFRAYSQBZXWLHKDVUPOJN",
+                "einführungsdatum": "",
+                "modell": "Enigma-G"
+            },
+            {
+                "walze": "I (G260)",
+                "wiring": "RCSPBLKQAUMHWYTIFZVGOJNEXD",
+                "kerbe": ["A","B","C","E","F","G","I","K","L","O","P","Q","S","U","V","W","Z"],
+                "einführungsdatum": "",
+                "modell": "Enigma-G"
+            },
+            {
+                "walze": "II (G260)",
+                "wiring": "WCMIBVPJXAROSGNDLZKEYHUFQT",
+                "kerbe": ["A","C","D","F","G","H","K","M","N","Q","S","T","V","Y","Z"],
+                "einführungsdatum": "",
+                "modell": "Enigma-G"
+            },
+            {
+                "walze": "III (G260)",
+                "wiring": "FVDHZELSQMAXOKYIWPGCBUJTNR",
+                "kerbe": ["A","C","D","F","G","H","K","M","N","Q","S","T","V","Y","Z"],
+                "einführungsdatum": "",
+                "modell": "Enigma-G"
+            }
+        ],
+
+        "G312": [
+            {
+                "walze": "UKW (G312)",
+                "wiring": "RULQMZJSYGOCETKWDAHNBXPVIF",
+                "einführungsdatum": "",
+                "modell": "Enigma-G"
+            },
+            {
+                "walze": "I (G312)",
+                "wiring": "DMTWSILRUYQNKFEJCAZBPGXOHV",
+                "kerbe": ["A","B","C","E","F","G","I","K","L","O","P","Q","S","U","V","W","Z"],
+                "einführungsdatum": "",
+                "modell": "Enigma-G"
+            },
+            {
+                "walze": "II (G312)",
+                "wiring": "HQZGPJTMOBLNCIFDYAWVEUSRKX",
+                "kerbe": ["A","C","D","F","G","H","K","M","N","Q","S","T","V","Y","Z"],
+                "einführungsdatum": "",
+                "modell": "Enigma-G"
+            },
+            {
+                "walze": "III (G312)",
+                "wiring": "UQNTLSZFMREHDPXKIBVYGJCWOA",
+                "kerbe": ["A","C","D","F","G","H","K","M","N","Q","S","T","V","Y","Z"],
+                "einführungsdatum": "",
+                "modell": "Enigma-G"
+            }
+        ]
+    },
+
+    "Norenigma": [
+        {
+            "walze": "ETW",
+            "wiring": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+            "einführungsdatum": "1945",
+            "modell": "Norenigma"
+        },
+        {
+            "walze": "UKW",
+            "wiring": "MOWJYPUXNDSRAIBFVLKZGQCHET",
+            "einführungsdatum": "1945",
+            "modell": "Norenigma"
+        },
+        {
+            "walze": "I",
+            "wiring": "WTOKASUYVRBXJHQCPZEFMDINLG",
+            "einführungsdatum": "1945",
+            "modell": "Norenigma"
+        },
+        {
+            "walze": "II",
+            "wiring": "GJLPUBSWEMCTQVHXAOFZDRKYNI",
+            "einführungsdatum": "1945",
+            "modell": "Norenigma"
+        },
+        {
+            "walze": "III",
+            "wiring": "JWFMHNBPUSDYTIXVZGRQLAOEKC",
+            "einführungsdatum": "1945",
+            "modell": "Norenigma"
+        },
+        {
+            "walze": "IV",
+            "wiring": "ESOVPZJAYQUIRHXLNFTGKDCMWB",
+            "einführungsdatum": "1945",
+            "modell": "Norenigma"
+        },
+        {
+            "walze": "V",
+            "wiring": "HEJXQOTZBVFDASCILWPGYNMURK",
+            "einführungsdatum": "1945",
+            "modell": "Norenigma"
+        }
+    ],
+
+    "Sonder-Maschine": [
+        {
+            "walze": "UKW (S)",
+            "wiring": "CIAGSNDRBYTPZFULVHEKOQXWJM",
+            "einführungsdatum": "1943",
+            "modell": "I"
+        },
+        {
+            "walze": "I (S)",
+            "wiring": "VEOSIRZUJDQCKGWYPNXAFLTHMB",
+            "einführungsdatum": "1943",
+            "modell": "I"
+        },
+        {
+            "walze": "II (S)",
+            "wiring": "UEMOATQLSHPKCYFWJZBGVXIDNR",
+            "einführungsdatum": "1943",
+            "modell": "I"
+        },
+        {
+            "walze": "III (S)",
+            "wiring": "TZHXMBSIPNURJFDKEQVCWGLAOY",
+            "einführungsdatum": "1943",
+            "modell": "I"
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+[
+    {
+        "walze": "ETW",
+        "wiring": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "einführungsdatum": "1930",
+        "modell": ["1", "M3", "M4"]
+    },
+    {
+        "walze": "UKW A",
+        "wiring": "EJMZALYXVBWFCRQUONTSPIKHGD",
+        "einführungsdatum": "",
+        "modell": ["1", "M3", "M4"]
+    },
+    {
+        "walze": "UKW B",
+        "wiring": "YRUHQSLDPXNGOKMIEBFZCWVJAT",
+        "einführungsdatum": "2. November 1937",
+        "modell": ["1", "M3", "M4"]
+    },
+    {
+        "walze": "UKW C",
+        "wiring": "FVPJIAOYEDRZXWGCTKUQSBNMHL",
+        "einführungsdatum": "1940/41",
+        "modell": ["1", "M3", "M4"]
+    },
+    {
+        "walze": "I",
+        "wiring": "EKMFLGDQVZNTOWYHXUSPAIBRCJ",
+        "kerbe": "Q",
+        "einführungsdatum": "1930",
+        "modell": ["1", "M3", "M4"]
+    },
+    {
+        "walze": "II",
+        "wiring": "AJDKSIRUXBLHWTMCQGZNPYFVOE",
+        "kerbe": "E",
+        "einführungsdatum": "1930",
+        "modell": ["1", "M3", "M4"]
+    },
+    {
+        "walze": "III",
+        "wiring": "BDFHJLCPRTXVZNYEIWGAKMUSQO",
+        "kerbe": "V",
+        "einführungsdatum": "1930",
+        "modell": ["1", "M3", "M4"]
+    },
+    {
+        "walze": "IV",
+        "wiring": "ESOVPZJAYQUIRHXLNFTGKDCMWB",
+        "kerbe": "J",
+        "einführungsdatum": "15. Dezember 1938",
+        "modell": ["M3", "M4"]
+    },
+    {
+        "walze": "V",
+        "wiring": "VZBRGITYUPSDNHLXAWMJQOFECK",
+        "kerbe": "Z",
+        "einführungsdatum": "15. Dezember 1938",
+        "modell": ["M3", "M4"]
+    },
+    {
+        "walze": "VI",
+        "wiring": "JPGVOUMFYQBENHZRDKASXLICTW",
+        "kerbe": ["Z", "M"],
+        "einführungsdatum": "1939",
+        "modell": ["M3", "M4"]
+    },
+    {
+        "walze": "VII",
+        "wiring": "NZJHGRCXMYSWBOUFAIVLPEKQDT",
+        "kerbe": ["Z", "M"],
+        "einführungsdatum": "1939",
+        "modell": ["M3", "M4"]
+    },
+    {
+        "walze": "VIII",
+        "wiring": "FKQHTLXOCBJSPDZRAMEWNIUYGV",
+        "kerbe": ["Z", "M"],
+        "einführungsdatum": "1939",
+        "modell": ["M3", "M4"]
+    }
+]

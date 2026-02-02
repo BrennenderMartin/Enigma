@@ -16,30 +16,24 @@ with open("nachricht.json", "r") as file:
 def buildFile(file):
     with open(f"")
 print(nachricht)
+
+Iteration over the vorlage.json
+for item in vorlage:
+    print(f"{item}: ")
+    if type(vorlage[item]) == list:
+        for lItem in vorlage[item]:
+            print(lItem)
+    else:
+        print(vorlage[item])
 """
 
 def create_enigma(filePath: str, name: str):
     with open(f"src/enigma/{filePath}", "r") as file:
         vorlage: dict = json.load(file)
-    """ Iteration over the vorlage.json
-    for item in vorlage:
-        print(f"{item}: ")
-        if type(vorlage[item]) == list:
-            for lItem in vorlage[item]:
-                print(lItem)
-        else:
-            print(vorlage[item])
-    """
     
-    enigma = Enigma(
-        name, 
-        vorlage
-    )
-    print(
-        enigma,
-        enigma.encode("Hello World"),"\n",
-        enigma
-    )
+    enigma = Enigma(name, vorlage)
+    
+    print("Output:", enigma.encode("XAACH", "RTZ"))
 
 def main():
     create_enigma("vorlage.json", "Enigma-M3")

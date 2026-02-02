@@ -1,4 +1,6 @@
 import json
+import string
+from enigma.walze import Walze
 
 class Enigma:
     def __init__(self, name: str, vorlage: dict):
@@ -11,112 +13,129 @@ class Enigma:
         self.ringstellung: list[int] = vorlage["Ringstellung"]
         self.steckerverbindung: list[str] = vorlage["Steckerverbindung"]
         self.kenngruppen: list[str] = vorlage["Kenngruppen"]
+        
+        self.walzen: list[Walze] = []
     
-    def encode(self, text: str) -> str:
+    
+    def encode(self, text: str, startingPosition: str) -> str:
         steckeredText = self.stecker(text)
         
-        workText = self.rotors(steckeredText)
+        workText = self.rotors(steckeredText, startingPosition)
         
-        #retText = self.stecker(workText)
+        retText = self.stecker(workText)
         
-        return workText
+        return self.getEnigmaString(retText)
+    
     
     def decode(self, text: str) -> str:
         retText = text
         ...
         return retText
     
+    
+    def getEnigmaString(self, text: str) -> str:
+        """
+        Takes a joint sting and cuts it into 5 chars long items, seperated by a space in one string
+        Example: Dear User Hello World -> DearU serHe lloWo rld
+        """
+        retText = ""
+        for item in [text[i:i+5] for i in range(0, len(text), 5)]:
+            retText += f"{item} "
+        return retText
+    
+    
     def stecker(self, text: str) -> str:
         """
-            loops through a whole text and steckers every letter anew
+            loops through a whole text and steckers every letter a new
         """
-        text = "".join(text.upper().split())
-        workList = list(text)
+        workList = list("".join(text.upper().split()))
         steckeredText = ""
         for item in workList:
-            item = self.steckerbrett(item)
-            steckeredText += item
+            steckeredText += self.steckerbrett(item)
         return steckeredText
+    
     
     def steckerbrett(self, inputChar: str) -> str:
         """
             Takes an input and converts it through the Steckerverbindungen of this enigma machine
         """
-        inputChar = inputChar.upper()
         outputChar = inputChar
         for item in self.steckerverbindung:
             for char in item:
                 if inputChar == char:
-                    item = list(item)
-                    for lItem in item:
-                        if lItem != inputChar:
-                            outputChar = lItem
+                    for listItem in list(item):
+                        if listItem != inputChar:
+                            outputChar = listItem
         return outputChar
-    
-    def rotors(self, text: str):
-        etw, ukw, rotors = self.findRotors()
-        #print(f"'\n{repr(etw)},\n\n{repr(ukw)},\n\n{rotors}\n'")
-        retText = list(text)
-        #print(retText)
+
+
+    def rotors(self, text: str, startingPosition: str) -> str:
+        startingPositions: list = []
+        for item in startingPosition:
+            startingPositions.append(string.ascii_uppercase.index(item))
+        self.walzen = self.findRotors("rotors.json", startingPositions)
         
-        #pls just do the logic to make the rotors work and dont just procrastinate!!
+        runOrder = [0, 2, 3, 4, 1, 4, 3, 2, 0]
+        workList: list[int] = [string.ascii_uppercase.index(char) for char in text]
         
+        print(startingPositions)
+        print(self.walzen)
+        print(workList)
+        
+        """
+        print("Items:\n")
+        for index, item in enumerate(workList):
+            #for walze in runOrder:
+                #item = walzen[walze].run(item, index)
+            print("")
+        
+        
+        for walze in walzen:
+            print(walze.walzenart, walze.encoding)
+        """
+        
+        retText = "".join(string.ascii_uppercase[i] for i in workList)
         return retText
 
-    def findRotors(self) -> list:
-        with open(f"src/enigma/rotors.json", "r") as file:
+
+    def findRotors(self, referencePath: str, startingPositions: list[int]) -> list[Walze]:
+        with open(f"src/enigma/{referencePath}", "r") as file: # referencePath meint hier die Rotorenliste (path)
             rotorTable: dict = json.load(file)
         
         walzen: list = []
+        
         if self.type[0] == "Enigma" and self.type[1] in ["1", "M3", "M4"]:
-            
+            """ Unnecessary, just appends "UKW B" to the Walzenlage and finds the index of it
             # Check if UKW exists, if not append "UKW B"
-            has_ukw = any(walze.split(" ")[0] == "UKW" for walze in self.walzenlage)
-            if not has_ukw:
+            hasUkw = any(walze.split(" ")[0] == "UKW" for walze in self.walzenlage)
+            if not hasUkw:
                 self.walzenlage.append("UKW B")
             
             # Find UKW index
-            ukw_index = next(
+            ukwIndex = next(
                 (i for i, walze in enumerate(self.walzenlage) 
                     if walze.split(" ")[0] == "UKW"), -1
             )
+            """
             
             for item in rotorTable:
-                #Eintrittswalze
                 if item["walze"] == "ETW":
                     etw = Walze(item)
-                
-                #Umkehrwalze
-                elif item["walze"] == self.walzenlage[ukw_index]:
+                    walzen.append(etw)
+                    
+                elif item["walze"] == f"UKW {self.walzenlage[-1]}":
                     ukw = Walze(item)
-                
-                #Hauptwalzen
+                    walzen.append(ukw)
+                    
                 else:
-                    for walze in self.walzenlage:
+                    for i, walze in enumerate(self.walzenlage):
                         if item["walze"] == walze:
-                            walzen.append(Walze(item))
+                            walzen.append(Walze(item, startingPositions[i]))
         else:
             print("Unfinished logic! Not yet implemented, please change file for implmentation!")
         
-        walzen.reverse()
-        return etw, ukw, walzen
+        return walzen
+    
     
     def __repr__(self) -> str:
         return f"{self.name, self.walzenlage, self.ringstellung, self.steckerverbindung, self.kenngruppen}"
-
-class Walze:
-    def __init__(self, source: dict):
-        self.walzenart: str = source["walze"]
-        self.wiring: str = source["wiring"]
-        
-        if self.walzenart.split(" ")[0] not in ["ETW", "UKW"]:
-            self.kerbe: list = source["kerbe"]
-        else:
-            self.kerbe = None
-        
-        self.modell: list = source["modell"]
-    
-    def __str__(self) -> str: 
-        return f"{self.walzenart} mit Verkabelung: {self.wiring} und Kerben: {self.kerbe} für Modelle: {self.modell}"
-    def __repr__(self) -> str:
-        return f"{self.walzenart, self.wiring, self.kerbe, self.modell}"

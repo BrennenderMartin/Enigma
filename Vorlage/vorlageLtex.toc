@@ -1,0 +1,18 @@
+\babel@toc {german}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{3}{}%
+\contentsline {section}{\numberline {2}Ein bißchen zu \LaTeX \ und zur Typographie}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Typographische Feinheiten, die viele nicht kennen...}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Ein paar Beispiele für den Einsatz von \LaTeX }{3}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Darstellung Chemie}{4}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Darstellung Mathematik}{4}{}%
+\contentsline {subsubsection}{\numberline {2.2.3}Darstellung von Quellcode}{5}{}%
+\contentsline {subsubsection}{\numberline {2.2.4}Darstellung von Zitaten, Quellen, etc.}{5}{}%
+\contentsline {subsubsection}{\numberline {2.2.5}Die Datei \emph {literatur.bib}}{6}{}%
+\contentsline {subsubsection}{\numberline {2.2.6}Zitate aus anderen Werken}{6}{}%
+\contentsline {subsubsection}{\numberline {2.2.7}Gedichte in Versform}{6}{}%
+\contentsline {subsubsection}{\numberline {2.2.8}Farbhervorhebungen}{7}{}%
+\contentsline {subsubsection}{\numberline {2.2.9}Bilder}{7}{}%
+\contentsline {subsubsection}{\numberline {2.2.10}Tabellen}{7}{}%
+\contentsline {subsubsection}{\numberline {2.2.11}Erweiterungen}{8}{}%
+\contentsline {section}{\numberline {3}Vorbereitungen zum Schreiben einer Facharbeit}{8}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,15 +1,15 @@
 {
     "Datum": "29",
     "Walzenlage": [ 
-        "III",
+        "I",
         "IV",
-        "V",
+        "III",
         "B"
     ],
     "Ringstellung": [
-        "14",
-        "18",
-        "05"
+        "16",
+        "26",
+        "08"
     ],
     "Steckerverbindung": [
         "CV",

@@ -1,0 +1,50 @@
+\documentclass[a4paper,ngerman, 11pt]{report}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{blindtext}
+\usepackage{picture}
+\usepackage{graphicx}
+\usepackage[backend=biber]{biblatex}
+\usepackage[german]{babel}
+
+\addbibresource{referenzen.bib}
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\begin{document}
+    \begin{titlepage}  
+        \begin{center}
+            \LARGE Geschwister-Scholl-Gymnasium Velbert\par
+            \vspace{1cm}
+            \large Facharbeit Informatik \par
+            \vspace{1.5cm}
+            {\huge\bfseries Thema\par}
+            \large Mattis Jung, Q1 25/26\par
+        \end{center}
+        \vfill
+
+        \large 09.01.2026 - 23.02.2026\par
+        6 Wochen
+    \end{titlepage}
+
+\newpage
+\tableofcontents 
+\newpage
+
+    \begin{onehalfspace}
+        \newgeometry{
+            left=4cm,
+            right=2cm,
+            top=2.5cm,
+            bottom=4cm,
+            footskip=2cm,
+            includefoot
+        }
+        \pagestyle{plain}
+
+    \end{onehalfspace}
+
+\newpage
+
+\printbibliography
+\end{document}

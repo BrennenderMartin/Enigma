@@ -33,7 +33,7 @@ def create_enigma(filePath: str, name: str):
     
     enigma = Enigma(name, vorlage)
     
-    print("Output:", enigma.encode("XAACH", "RTZ"))
+    print("Output:", enigma.encode("RTZ", "QWE"))
 
 def main():
     create_enigma("vorlage.json", "Enigma-M3")

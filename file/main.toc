@@ -1,4 +1,4 @@
-\babel@toc {german}{}\relax 
+\babel@toc {ngerman}{}\relax 
 \contentsline {section}{\numberline {0.1}Einleitung}{2}{}%
 \contentsline {section}{\numberline {0.2}Die Enigma-Maschiene}{2}{}%
 \contentsline {subsection}{\numberline {0.2.1}Was die Enigma-Maschiene ist}{2}{}%

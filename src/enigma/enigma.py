@@ -93,9 +93,9 @@ class Enigma:
             retList.append(item)
             self.rotate()
         
-        
         retText = "".join(string.ascii_uppercase[i] for i in retList)
         return retText
+
 
     def rotate(self):
         """
@@ -105,6 +105,7 @@ class Enigma:
             if self.walzen[3].rotate():
                 if self.walzen[4].rotate():
                     pass
+
 
     def findRotors(self, referencePath: str, startingPositions: list[int]) -> list[Walze]:
         """

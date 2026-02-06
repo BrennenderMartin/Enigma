@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.3)  4 FEB 2026 21:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.4)  6 FEB 2026 15:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**e:/GitHub/Enigma/file/main.tex
-(e:/GitHub/Enigma/file/main.tex
+**d:/GitHub/Enigma/file/main.tex
+(d:/GitHub/Enigma/file/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
-(d:/texlive/2025/texmf-dist/tex/latex/base/report.cls
+(d:/Programme/texlive/2025/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
-(d:/texlive/2025/texmf-dist/tex/latex/base/size11.clo
+(d:/Programme/texlive/2025/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -24,14 +24,14 @@ File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (d:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+) (d:/Programme/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (d:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-) (d:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+) (d:/Programme/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (d:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+ (d:/Programme/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count284
@@ -46,11 +46,11 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen155
 \Gm@layoutvoffset=\dimen156
 \Gm@dimlist=\toks18
-) (d:/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+) (d:/Programme/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (d:/texlive/2025/texmf-dist/tex/latex/blindtext/blindtext.sty
+) (d:/Programme/texlive/2025/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
- (d:/texlive/2025/texmf-dist/tex/latex/tools/xspace.sty
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 \c@blindtext=\count287
@@ -71,25 +71,25 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@randommax=\count302
 \c@blind@pangramcount=\count303
 \c@blind@pangrammax=\count304
-) (d:/texlive/2025/texmf-dist/tex/latex/picture/picture.sty
+) (d:/Programme/texlive/2025/texmf-dist/tex/latex/picture/picture.sty
 Package: picture 2020-04-22 v1.6 Dimens for picture macros (HO)
 Package picture Info: Calculation method: etex.
-) (d:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+) (d:/Programme/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (d:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (d:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (d:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (d:/Programme/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (d:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen157
 \Gin@req@width=\dimen158
-) (d:/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
+) (d:/Programme/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2026/01/26 v26.2 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count305
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
@@ -101,19 +101,19 @@ LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) o
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2111.
 \U@D=\dimen159
 \l@unhyphenated=\language90
- (d:/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
+ (d:/Programme/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count306
- (d:/texlive/2025/texmf-dist/tex/generic/babel/locale/invalid/babel-ngerman.tex)
+ (d:/Programme/texlive/2025/texmf-dist/tex/generic/babel/locale/invalid/babel-ngerman.tex)
 Package babel Info: Importing font and identification data for ngerman
 (babel)             from babel-de.ini. Reported on input line 4330.
- (d:/texlive/2025/texmf-dist/tex/generic/babel-german/ngerman.ldf
+ (d:/Programme/texlive/2025/texmf-dist/tex/generic/babel-german/ngerman.ldf
 Language: ngerman 
- (d:/texlive/2025/texmf-dist/tex/generic/babel-german/babel-german.def
+ (d:/Programme/texlive/2025/texmf-dist/tex/generic/babel-german/babel-german.def
 Package babel Info: Making " an active character on input line 470.
-))) (d:/texlive/2025/texmf-dist/tex/latex/csquotes/csquotes.sty
+))) (d:/Programme/texlive/2025/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
- (d:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count307
 )
@@ -124,39 +124,39 @@ Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \csq@maxlvl=\count312
 \csq@tshold=\count313
 \csq@ltx@everypar=\toks19
- (d:/texlive/2025/texmf-dist/tex/latex/csquotes/csquotes.def
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
- (d:/texlive/2025/texmf-dist/tex/latex/csquotes/csquotes.cfg
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Enabling multilingual quotes.
-) (d:/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.sty
+) (d:/Programme/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
- (d:/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+ (d:/Programme/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (d:/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (d:/Programme/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (d:/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+) (d:/Programme/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (d:/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+) (d:/Programme/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (d:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (d:/texlive/2025/texmf-dist/tex/latex/logreq/logreq.sty
+)) (d:/Programme/texlive/2025/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count314
- (d:/texlive/2025/texmf-dist/tex/latex/logreq/logreq.def
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) (d:/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+)) (d:/Programme/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (d:/texlive/2025/texmf-dist/tex/latex/url/url.sty
+) (d:/Programme/texlive/2025/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -219,7 +219,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \c@mincompwidth=\count360
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (d:/texlive/2025/texmf-dist/tex/latex/biblatex/blx-dm.def
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -308,12 +308,12 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip72
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (d:/texlive/2025/texmf-dist/tex/latex/biblatex/blx-compat.def
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (d:/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.def
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 \c@textcitecount=\count429
 \c@textcitetotal=\count430
@@ -331,18 +331,18 @@ File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- (d:/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
 File: numeric.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (d:/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count438
 \c@bbx:relatedtotal=\count439
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
- (d:/texlive/2025/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
 File: numeric.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -358,14 +358,14 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (d:/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.cfg
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
- (d:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2026-01-19 L3 programming layer (loader) 
- (d:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count440
 ))
@@ -373,7 +373,7 @@ Package biblatex Info: ... and expl3
 (biblatex)             2026-01-19 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (d:/texlive/2025/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (d:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (d:/Programme/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
@@ -435,7 +435,7 @@ LaTeX Font Info:    ... okay on input line 15.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(d:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(d:/Programme/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count441
 \scratchdimen=\dimen160
@@ -448,24 +448,24 @@ LaTeX Font Info:    ... okay on input line 15.
 \MPnumerator=\count445
 \makeMPintoPDFobject=\count446
 \everyMPtoPDFconversion=\toks21
-) (d:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (d:/Programme/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (d:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
- (d:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
 File: ngerman.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
- (d:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/german.lbx
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
- (d:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/german.lbx
+ (d:/Programme/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 ))
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -480,13 +480,214 @@ Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
  [1
 
-{d:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
+{d:/Programme/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 2.
+
+./main.toc:2: Undefined control sequence.
+<argument> \@invisible 
+                       \c@page 
+l.2 ...ne {0.1}Einleitung}{\@invisible \c@page }{}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.toc:2: Missing number, treated as zero.
+<to be read again> 
+                   \kern 
+l.2 ...ne {0.1}Einleitung}{\@invisible \c@page }{}
+                                                  %
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./main.toc:3: Undefined control sequence.
+<argument> \@invisible 
+                       \c@page 
+l.3 ...e Enigma-Maschiene}{\@invisible \c@page }{}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.toc:3: Missing number, treated as zero.
+<to be read again> 
+                   \kern 
+l.3 ...e Enigma-Maschiene}{\@invisible \c@page }{}
+                                                  %
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./main.toc:4: Undefined control sequence.
+<argument> \@invisible 
+                       \c@page 
+l.4 ...igma-Maschiene ist}{\@invisible \c@page }{}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.toc:4: Missing number, treated as zero.
+<to be read again> 
+                   \kern 
+l.4 ...igma-Maschiene ist}{\@invisible \c@page }{}
+                                                  %
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./main.toc:5: Undefined control sequence.
+<argument> \@invisible 
+                       \c@page 
+l.5 ...Maschiene entstand}{\@invisible \c@page }{}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.toc:5: Missing number, treated as zero.
+<to be read again> 
+                   \kern 
+l.5 ...Maschiene entstand}{\@invisible \c@page }{}
+                                                  %
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./main.toc:6: Undefined control sequence.
+<argument> \@invisible 
+                       \c@page 
+l.6 ...hiene funktioniert}{\@invisible \c@page }{}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.toc:6: Missing number, treated as zero.
+<to be read again> 
+                   \kern 
+l.6 ...hiene funktioniert}{\@invisible \c@page }{}
+                                                  %
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./main.toc:7: Undefined control sequence.
+<argument> \@invisible 
+                       \c@page 
+l.7 ...r Enigma-Maschiene}{\@invisible \c@page }{}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.toc:7: Missing number, treated as zero.
+<to be read again> 
+                   \kern 
+l.7 ...r Enigma-Maschiene}{\@invisible \c@page }{}
+                                                  %
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./main.toc:8: Undefined control sequence.
+<argument> \@invisible 
+                       \c@page 
+l.8 ...gma Implementation}{\@invisible \c@page }{}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.toc:8: Missing number, treated as zero.
+<to be read again> 
+                   \kern 
+l.8 ...gma Implementation}{\@invisible \c@page }{}
+                                                  %
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./main.toc:9: Undefined control sequence.
+<argument> \@invisible 
+                       \c@page 
+l.9 ...se Implementation?}{\@invisible \c@page }{}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.toc:9: Missing number, treated as zero.
+<to be read again> 
+                   \kern 
+l.9 ...se Implementation?}{\@invisible \c@page }{}
+                                                  %
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./main.toc:10: Undefined control sequence.
+<argument> \@invisible 
+                       \c@page 
+l.10 ... Enigma-Maschiene}{\@invisible \c@page }{}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.toc:10: Missing number, treated as zero.
+<to be read again> 
+                   \kern 
+l.10 ... Enigma-Maschiene}{\@invisible \c@page }{}
+                                                  %
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./main.toc:11: Undefined control sequence.
+<argument> \@invisible 
+                       \c@page 
+l.11 ...Enigma-Maschiene?}{\@invisible \c@page }{}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.toc:11: Missing number, treated as zero.
+<to be read again> 
+                   \kern 
+l.11 ...Enigma-Maschiene?}{\@invisible \c@page }{}
+                                                  %
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
 )
 \tf@toc=\write4
 \openout4 = `main.toc'.
@@ -529,8 +730,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [2
 
 ]
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 64.
+ [3] [4] [5]
 
-LaTeX Warning: Empty bibliography on input line 70.
+LaTeX Warning: Empty bibliography on input line 81.
 
 (./main.aux)
  ***********
@@ -542,18 +746,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12030 strings out of 467533
- 225447 string characters out of 5423669
- 1105666 words of memory out of 5000000
- 40831 multiletter control sequences out of 15000+600000
- 633473 words of font info for 59 fonts, out of 8000000 for 9000
+ 12034 strings out of 467533
+ 226812 string characters out of 5418459
+ 1105640 words of memory out of 5000000
+ 40834 multiletter control sequences out of 15000+600000
+ 633829 words of font info for 60 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  63i,5n,66p,715b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on main.pdf (3 pages, 50116 bytes).
+<d:/Programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><d:/Programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><d:/Programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><d:/Programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><d:/Programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
+Output written on main.pdf (6 pages, 61212 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

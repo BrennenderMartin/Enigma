@@ -19,22 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
-    \entry{Tirpitz}{online}{}{}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{labeltitlesource}{title}
-      \field{title}{Enigma-T}
-      \field{urlday}{7}
-      \field{urlmonth}{2}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://de.wikipedia.org/wiki/Enigma-T
-      \endverb
-      \verb{url}
-      \verb https://de.wikipedia.org/wiki/Enigma-T
-      \endverb
-    \endentry
     \entry{Patentschrift}{online}{}{}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}

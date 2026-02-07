@@ -3,7 +3,7 @@ import string
 from enigma.walze import Walze
 
 class Enigma:
-    def __init__(self, name: str, vorlage: dict):
+    def __init__(self, name: str, vorlage: dict, startingPosition: str):
         self.name: str = name
         self.type = self.name.split("-")
         
@@ -14,17 +14,21 @@ class Enigma:
         self.steckerverbindung: list[str] = vorlage["Steckerverbindung"]
         self.kenngruppen: list[str] = vorlage["Kenngruppen"]
         
+        self.startingPositions: list[int] = [
+            string.ascii_uppercase.index(char) for char in startingPosition
+        ]
+        
         self.walzen: list[Walze] = []
 
 
-    def encode(self, text: str, startingPosition: str) -> str:
+    def encode(self, text: str) -> str:
         """
             Runs the whole Enigma: Steckerbrett -> Rotoren -> Steckerbrett
             Converts the returned-joined String into a String with len(5) elements split by spaces
         """
         steckeredText = self.stecker(text)
         
-        workText = self.rotors(steckeredText, startingPosition)
+        workText = self.rotors(steckeredText)
         
         retText = self.stecker(workText)
         
@@ -67,14 +71,12 @@ class Enigma:
         return outputChar
 
 
-    def rotors(self, text: str, startingPosition: str) -> str:
+    def rotors(self, text: str) -> str:
         #Convert startingPositions from the letter to integers
-        startingPositions: list = []
-        for item in startingPosition:
-            startingPositions.append(string.ascii_uppercase.index(item))
+        
         
         #Create the Walzen return [etw, ukw, III, IV, V]
-        self.walzen = self.findRotors("rotors.json", startingPositions)
+        self.walzen = self.findRotors("rotors.json", self.startingPositions)
         
         #Order, in which the rotors will be gone through
         runOrder = [0, 2, 3, 4, 1, 4, 3, 2, 0]
@@ -83,7 +85,7 @@ class Enigma:
         workList: list[int] = [string.ascii_uppercase.index(char) for char in text]
         retList: list[int] = []
         
-        print(startingPositions)
+        print(self.startingPositions)
         print(self.walzen)
         print(workList)
         
@@ -124,7 +126,7 @@ class Enigma:
         
         walzen: list = []
         
-        if self.type[0] == "Enigma" and self.type[1] in ["1", "M3", "M4"]:
+        if self.type[0] == "Enigma" and self.type[1] in ["I", "M3", "M4"]:
             """ Unnecessary, just appends "UKW B" to the Walzenlage and finds the index of it
             # Check if UKW exists, if not append "UKW B"
             hasUkw = any(walze.split(" ")[0] == "UKW" for walze in self.walzenlage)

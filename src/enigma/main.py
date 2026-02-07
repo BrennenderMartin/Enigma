@@ -25,18 +25,23 @@ for item in vorlage:
             print(lItem)
     else:
         print(vorlage[item])
+        
+        
+HELLO WORLD
+
+YYWBG YTBIK
 """
 
-def create_enigma(filePath: str, name: str):
+def create_enigma(filePath: str, name: str, startingPosition: str):
     with open(f"src/enigma/{filePath}", "r") as file:
         vorlage: dict = json.load(file)
     
-    enigma = Enigma(name, vorlage)
+    enigma = Enigma(name, vorlage, startingPosition)
     
-    print("Output:", enigma.encode("RTZ", "QWE"))
+    print("Output:", enigma.encode("HELLO WORLD"))
 
 def main():
-    create_enigma("vorlage.json", "Enigma-M3")
+    create_enigma("vorlage.json", "Enigma-I", "QWE")
 
 if __name__ == "__main__":
     main()

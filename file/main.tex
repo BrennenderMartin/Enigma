@@ -19,12 +19,12 @@
             \vspace{1cm}
             \large Facharbeit Informatik \par
             \vspace{1.5cm}
-            {\huge\bfseries Die Enigma Verschlüsselung\par}
+            {\huge\bfseries Die Enigma Verschlüsselung\,-\,woran sie gescheitert ist \par}
             \large Mattis Jung, Q1 25/26\par
         \end{center}
         \vfill
 
-        \large 09.01.2026 - 23.02.2026\par
+        \large 09.01.2026\,-\,23.02.2026\par
         6 Wochen
     \end{titlepage}
 
@@ -46,37 +46,55 @@
 \newpage
 \section{Einleitung}
 
-\newpage
-\section{Die Enigma-Maschiene}
-
-\subsection{Was die Enigma-Maschiene ist}
-
-    Die Enigma-Maschiene ist eine Chiffriermaschiene, die 
-    durch die Nutzung von einem Streckerbrett und mehreren 
-    Walzen eine Nachricht Buchstabe für Buchstabe verschlüsseln.
+%\newpage
+\section{Die Enigma\,-\,Maschine}
+    Die Enigma\,-\,Maschine ist eine Chiffriermaschine, die durch die Nutzung von Permutation und Subststution der Buchstaben eine Nachricht Buchstabe für Buchstabe verschlüsselt.
     
+\subsection{Wie die Enigma\,-\,Maschine entstand}
+    Die Idee der Enigma\,-\,Maschine entstand bereits im ersten Weltkrieg, als die deutschen eine möglichkeit brauchten geheime Nachrichten an die Front zu schicken, ohne dass Alliierte Truppen diese mitbekommen.
+    Deshalb kam Arthur Scherbius (1878 - 1929) auf die Idee eine Rotor-Schlüsselmaschine zu erfinden, welche er am 23. Februar 1918 auch patentieren ließ. \cite{Patentschrift}
+    Der Name der Enigma\,-\,Maschine entstand Ende 1923, als Scherbius seine Erfindung nach dem Griechischem Wort \emph{enigma} bennante, welches Rätsel bedeutet.
+
+    Über die Jahre wurde diese immer populärer in Deutschland und nach Ende des zweiten Weltkrieges wurde verschiedenste, von den deutschen zurückgelassene, Exemplare modifiziert und auch weiter benutzt. 
+    Ein Beispiel hierfür ist die \emph{Norenigma}, welche eine in Norwegen modifizierte Version der deutschen Enigma\,-\,Maschine ist.
+
+\subsection{Wie die Enigma\,-\,Maschine funktioniert}
+    Von Außen sieht die Enigma\,-\,Maschine einer Schreibmaschine nicht ganz unähnlich, nur hier hat man nicht nur die Tastatur, sondern auch ein Glühlampenbrett, wo es für jede Taste der Tastatur eine Glühlampe gibt, die aufleuchtet, wenn eine Taste gedrückt wird.
+    Dazu besteht die Enigma\,-\,Maschine aus 2 wichtigen Chiffrierteilen:
+
+    \textbf{1. Das Steckerbrett:} Dort werden alle Buchstaben die es in der Tastatur gibt angezeigt und man kann Kabel in den jeweiligen Buchstaben stecken und diesen dann mit einem andern verbinden.
+    Dies sorgt dafür, dass der eingegebene Buchstabe durch den zweiten ersetzt wird, also dass eine \emph{Permutation} stattfindet.
+    Wenn ein Buchstabe in der Enigma\,-\,Maschine mit einem anderen verkabelt ist, nennt man ihn \emph{gesteckert}.
+    In der Maschine sind immer 20 Buchstaben miteinander gesteckert und die restlichen 6 sind ungesteckert. 
+    Außerdem durften zwei im Alphabet aufeinanderfolgende Buchstaben nicht miteinander gesteckert sein.
+    Diese beiden Regelungen machten die Entschlüsselung der Enigma\,-\,Maschine für die Alliierte nicht schwerer, sondern nur leichter.
+
+    \textbf{2. Die Walzen:} Diese haben auf beiden Seiten je 26 Kontaktpunkt, welche in der Walze mit je einem andern Kontaktpunkt verkabelt sind.
+    Dies funktioniert aber nicht so, dass das \emph{A} auf der rechten Seite immer mit dem \emph{A} verkabelt ist, sondern meistens mit einem andern Buchstaben (\emph{E}), dadurch entsteht eine \emph{Substitution}.
+    Durch die Nutzung von meist 3 Walzen (Die \emph{Enigma-M4} nutze beispielsweise 4) steigt die verschlüsselungsstärke der Enigma\,-\,Maschine exponentiell.
+    Die Walzen hatten außerdem eine oder mehrere Kerben, welche dafür sorgten, dass nicht nur die erste Walze rotiert, sondern auch die nächsten mit rotieren.
+
+    Da die meisten Walzen nur eine Kerbe hatten war es selten, dass sich die letzt Walze wirklich viel verändert. 
+    Japan hatte aber dafür die Lösung, da sie bei ihrer Version der Enigma\,-\,Maschine nicht eine, sondern fünf Übertragungskerben hatten, welche diese Enigma\,-\,Maschine stärker machte als die in Deutschland am meisten verbreiteten Enigma\,-\,Maschinen (\emph{Enigma-T} oder auch \emph{Tirpitz} genannt \cite{Tirpitz}). 
+    Aber auch in Deutschland gab es Enigma\,-\,Maschine mit mehreren Übertragungskerben, da die Abwehr\,-\,Enigma (G) bis zu 17 Übertragungskerben hatte.
 
 
-    \subsection{Wie die Enigma-Maschiene entstand}
+\section{Was sind die Schwächen der Enigma\,-\,Maschine}
+    Durch verschiedenste Regulierungen wurde die Enigma\,-\,Maschine nicht cryptisch gestärkt, sondern nur gechwächt.
 
-    \subsection{Wie die Enigma-Maschiene funktioniert}
-    Dabei sind 20 der 26 Buchstaben des deutschen Alphabets 
-    \emph{gesteckert} und die restlichen 6 nicht.
-
-    \subsection{Was ist das Problem der Enigma-Maschiene}
-
-\newpage
+%\newpage
 \section{Meine Enigma Implementation}
 
 \subsection{Wie funktioniert diese Implementation?}
 
-\newpage
-\section{Die perfekte Enigma-Maschiene}
+%\newpage
+\section{Die perfekte Enigma\,-\,Maschine}
 
-\subsection{Was ist anders an dieser Enigma-Maschiene?}
+\subsection{Was ist anders an dieser Enigma\,-\,Maschine?}
 
 
 \end{onehalfspace}
 \newpage
 \printbibliography
+
 \end{document}

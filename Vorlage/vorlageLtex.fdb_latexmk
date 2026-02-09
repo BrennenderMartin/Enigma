@@ -1,5 +1,5 @@
 # Fdb version 4
-["bibtex vorlageLtex"] 0 "vorlageLtex.aux" "vorlageLtex.bbl" "vorlageLtex" 1770143254.4832 0
+["bibtex vorlageLtex"] 0 "vorlageLtex.aux" "vorlageLtex.bbl" "vorlageLtex" 1770649428.35923 0
   "d:/texlive/2025/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1770139072 26816 ffe5423d2019860bad9f54bc402fac15 ""
   "literatur.bib" 0 -1 0 ""
   "vorlageLtex.aux" 0 -1 0 "pdflatex"
@@ -7,7 +7,7 @@
   "vorlageLtex.bbl"
   "vorlageLtex.blg"
   (rewritten before read)
-["pdflatex"] 1770143249.87894 "e:/GitHub/Enigma/Dokument/vorlageLtex.tex" "vorlageLtex.pdf" "vorlageLtex" 1770143254.48423 2
+["pdflatex"] 1770649423.59519 "e:/GitHub/Enigma/Vorlage/vorlageLtex.tex" "vorlageLtex.pdf" "vorlageLtex" 1770649428.36023 2
   "bilder/header.png" 1770143239 799 7779a0b16b2c6ed130515a4e71901e06 ""
   "bilder/wald.jpg" 1770143239 1761407 9964b6f56331754c11c8e15c4a0bfaf9 ""
   "d:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1770136700 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -231,11 +231,11 @@
   "d:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1770141373 5587484 c7987984b6caa4aca5e7fc2e7f7fc58b ""
   "d:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1770141796 3636148 2824fa07d5b98d45d8ab2da21bd71d70 ""
   "d:/texlive/2025/texmf.cnf" 1770141330 713 e69b156964470283e0530f5060668171 ""
-  "e:/GitHub/Enigma/Dokument/vorlageLtex.tex" 1770033677 13295 48c47a4c1e29d5e65266f721f0cf545c ""
-  "vorlageLtex.aux" 1770143252 2585 c04a5f9935e5c94ea5f1c60c5ae4ef74 "pdflatex"
+  "e:/GitHub/Enigma/Vorlage/vorlageLtex.tex" 1770649414 13295 48c47a4c1e29d5e65266f721f0cf545c ""
+  "vorlageLtex.aux" 1770649426 2585 c04a5f9935e5c94ea5f1c60c5ae4ef74 "pdflatex"
   "vorlageLtex.bbl" 0 -1 0 "bibtex vorlageLtex"
-  "vorlageLtex.tex" 1770033677 13295 48c47a4c1e29d5e65266f721f0cf545c ""
-  "vorlageLtex.toc" 1770143252 1390 0159a68ef825355a8d51cf19c0c112ec "pdflatex"
+  "vorlageLtex.tex" 1770649414 13295 48c47a4c1e29d5e65266f721f0cf545c ""
+  "vorlageLtex.toc" 1770649426 1390 0159a68ef825355a8d51cf19c0c112ec "pdflatex"
   (generated)
   "vorlageLtex.aux"
   "vorlageLtex.log"

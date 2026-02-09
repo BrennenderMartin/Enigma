@@ -1,4 +1,4 @@
-\documentclass[a4paper,ngerman, 11pt]{report}
+\documentclass[a4paper,ngerman, 11pt]{article}
 \usepackage{geometry}
 \usepackage{setspace}
 \usepackage{blindtext}
@@ -6,11 +6,35 @@
 \usepackage{graphicx}
 \usepackage[ngerman]{babel}
 \usepackage[autostyle=true]{csquotes}
-\usepackage[backend=biber]{biblatex}
+%\usepackage[backend=biber]{biblatex}
+\usepackage[style=authoryear]{biblatex}
 
 \addbibresource{referenzen.bib}
 \renewcommand{\familydefault}{\sfdefault}
 
+\usepackage{color}
+\usepackage{listings}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+    frame=tb,
+    language=Python,
+    aboveskip=3mm,
+    belowskip=3mm,
+    showstringspaces=false,
+    columns=flexible,
+    basicstyle={\small\ttfamily},
+    numbers=none,
+    numberstyle=\tiny\color{gray},
+    keywordstyle=\color{blue},
+    commentstyle=\color{dkgreen},
+    stringstyle=\color{mauve},
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=3
+}
 
 \begin{document}
     \begin{titlepage}  
@@ -49,50 +73,116 @@
 %\newpage
 \section{Die Enigma\,-\,Maschine}
     Die Enigma\,-\,Maschine ist eine Chiffriermaschine, die durch die Nutzung von Permutation und Subststution der Buchstaben einer Nachricht, diese Buchstabe für Buchstabe verschlüsselt.
-    
-\subsection{Wie die Enigma\,-\,Maschine entstand}
-    Die Idee der Enigma\,-\,Maschine entstand bereits im ersten Weltkrieg, als die deutschen eine möglichkeit brauchten geheime Nachrichten an die Front zu schicken, ohne dass Alliierte Truppen diese mitbekommen.
-    Deshalb kam Arthur Scherbius (1878 - 1929) auf die Idee eine Rotor-Schlüsselmaschine zu erfinden, welche er am 23. Februar 1918 auch patentieren ließ. \cite{Patentschrift}
-    Der Name der Enigma\,-\,Maschine entstand Ende 1923, als Scherbius seine Erfindung nach dem Griechischem Wort \emph{enigma} bennante, welches Rätsel bedeutet.
 
-    Über die Jahre wurde diese immer populärer in Deutschland und nach Ende des zweiten Weltkrieges wurde verschiedenste, von den deutschen zurückgelassene, Exemplare modifiziert und auch weiter benutzt. 
-    Ein Beispiel hierfür ist die \emph{Norenigma}, welche eine in Norwegen modifizierte Version der deutschen Enigma\,-\,Maschine ist.
+    \subsection{Wie die Enigma\,-\,Maschine entstand}
+        Die Idee der Enigma\,-\,Maschine entstand bereits im ersten Weltkrieg, als die deutschen eine möglichkeit brauchten geheime Nachrichten an die Front zu schicken, ohne dass Alliierte Truppen diese mitbekommen.
+        Deshalb kam Arthur Scherbius (1878 - 1929) auf die Idee eine Rotor-Schlüsselmaschine zu erfinden, welche er am 23. Februar 1918 auch patentieren ließ. \footcite{Patentschrift}
+        Der Name der Enigma\,-\,Maschine entstand Ende 1923, als Scherbius seine Erfindung nach dem Griechischem Wort \emph{enigma} bennante, welches Rätsel bedeutet.
 
-\subsection{Wie die Enigma\,-\,Maschine funktioniert}
-    Von Außen sieht die Enigma\,-\,Maschine einer Schreibmaschine nicht ganz unähnlich, nur hier hat man nicht nur die Tastatur, sondern auch ein Glühlampenbrett, wo es für jede Taste der Tastatur eine Glühlampe gibt, die aufleuchtet, wenn eine Taste gedrückt wird.
-    Dazu besteht die Enigma\,-\,Maschine aus 2 wichtigen Chiffrierteilen:
+        Über die Jahre wurde diese immer populärer in Deutschland und nach Ende des zweiten Weltkrieges wurde verschiedenste, von den deutschen zurückgelassene, Exemplare modifiziert und auch weiter benutzt. 
+        Ein Beispiel hierfür ist die \emph{Norenigma}, welche eine in Norwegen modifizierte Version der deutschen Enigma\,-\,Maschine ist.
 
-    \textbf{1. Das Steckerbrett:} Dort werden alle Buchstaben die es in der Tastatur gibt angezeigt und man kann Kabel in den jeweiligen Buchstaben stecken und diesen dann mit einem andern verbinden.
-    Dies sorgt dafür, dass der eingegebene Buchstabe durch den zweiten ersetzt wird, also dass eine \emph{Permutation} stattfindet.
-    Wenn ein Buchstabe in der Enigma\,-\,Maschine mit einem anderen verkabelt ist, nennt man ihn \emph{gesteckert}.
-    In der Maschine sind immer 20 Buchstaben miteinander gesteckert und die restlichen 6 sind ungesteckert. 
-    Außerdem durften zwei im Alphabet aufeinanderfolgende Buchstaben nicht miteinander gesteckert sein.
-    Diese beiden Regelungen machten die Entschlüsselung der Enigma\,-\,Maschine für die Alliierte nicht schwerer, sondern nur leichter.
+    \subsection{Wie die Enigma\,-\,Maschine funktioniert}
+        Von Außen sieht die Enigma\,-\,Maschine einer Schreibmaschine nicht ganz unähnlich, nur hier hat man nicht nur die Tastatur, sondern auch ein Glühlampenbrett, wo es für jede Taste der Tastatur eine Glühlampe gibt, die aufleuchtet, wenn eine Taste gedrückt wird.
+        Dazu besteht die Enigma\,-\,Maschine aus 2 wichtigen Chiffrierteilen.
 
-    \textbf{2. Die Walzen:} Diese haben auf beiden Seiten je 26 Kontaktpunkt, welche in der Walze mit je einem andern Kontaktpunkt verkabelt sind.
-    Dies funktioniert aber nicht so, dass das \emph{A} auf der rechten Seite immer mit dem \emph{A} verkabelt ist, sondern meistens mit einem andern Buchstaben (\emph{E}), dadurch entsteht eine \emph{Substitution}.
-    Durch die Nutzung von meist 3 Walzen (Die \emph{Enigma-M4} nutze beispielsweise 4) steigt die verschlüsselungsstärke der Enigma\,-\,Maschine exponentiell.
-    Die Walzen hatten außerdem eine oder mehrere Kerben, welche dafür sorgten, dass nicht nur die erste Walze rotiert, sondern auch die nächsten mit rotieren.
+        \subsubsection{Das Steckerbrett} 
+            Dort werden alle Buchstaben die es in der Tastatur gibt angezeigt und man kann Kabel in den jeweiligen Buchstaben stecken und diesen dann mit einem andern verbinden.
+            Dies sorgt dafür, dass der eingegebene Buchstabe durch den zweiten ersetzt wird, also dass eine \emph{Permutation} stattfindet.
+            Wenn ein Buchstabe in der Enigma\,-\,Maschine mit einem anderen verkabelt ist, nennt man ihn \emph{gesteckert}.
+            In der Maschine sind immer 20 Buchstaben miteinander gesteckert und die restlichen 6 sind ungesteckert. 
+            Außerdem durften zwei im Alphabet aufeinanderfolgende Buchstaben nicht miteinander gesteckert sein.
+            Diese beiden Regelungen machten die Entschlüsselung der Enigma\,-\,Maschine für die Alliierte nicht schwerer, sondern nur leichter.
 
-    Da die meisten Walzen nur eine Kerbe hatten war es selten, dass sich die letzt Walze wirklich viel verändert. 
-    Für den Funkverkehr der Achsenmächte nach Japan hatten die deutschen aber eine alternative, da sie bei dieser Version der Enigma\,-\,Maschine nicht eine, sondern fünf Übertragungskerben hatten, welche diese Enigma\,-\,Maschine stärker machte als die in Deutschland am meisten verbreiteten Enigma\,-\,Maschinen (\emph{Enigma-T} oder auch \emph{Tirpitz} genannte Enigma\,-\,Maschine für den Funk nach Japan \cite{Tirpitz}). 
-    Aber auch in Deutschland gab es Enigma\,-\,Maschine mit mehreren Übertragungskerben, wie die Abwehr\,-\,Enigma (G), welche bis zu 17 Übertragungskerben hatte.
+        \subsubsection{Die Walzen}
+            Diese haben auf beiden Seiten je 26 Kontaktpunkt, welche in der Walze mit je einem andern Kontaktpunkt verkabelt sind.
+            Dies funktioniert aber nicht so, dass das \emph{A} auf der rechten Seite immer mit dem \emph{A} verkabelt ist, sondern meistens mit einem andern Buchstaben (\emph{E}), dadurch entsteht eine \emph{Substitution}.
+            Durch die Nutzung von meist 3 Walzen (Die \emph{Enigma-M4} nutze beispielsweise 4) steigt die verschlüsselungsstärke der Enigma\,-\,Maschine exponentiell.
+            Die Walzen hatten außerdem eine oder mehrere Kerben, welche dafür sorgten, dass nicht nur die erste Walze rotiert, sondern auch die nächsten mit rotieren.
+
+            Da die meisten Walzen nur eine Kerbe hatten war es selten, dass sich die letzt Walze wirklich viel verändert. 
+            Für den Funkverkehr der Achsenmächte nach Japan hatten die deutschen aber eine alternative, da sie bei dieser Version der Enigma\,-\,Maschine nicht eine, sondern fünf Übertragungskerben hatten, welche diese Enigma\,-\,Maschine stärker machte als die in Deutschland am meisten verbreiteten Enigma\,-\,Maschinen (\emph{Enigma-T} oder auch \emph{Tirpitz} genannte Enigma\,-\,Maschine für den Funk nach Japan). 
+            Aber auch in Deutschland gab es Enigma\,-\,Maschine mit mehreren Übertragungskerben, wie die Abwehr\,-\,Enigma (G), welche bis zu 17 Übertragungskerben hatte.
 
 
-\section{Was sind die Schwächen der Enigma\,-\,Maschine}
-    Durch verschiedenste Regulierungen wurde die Enigma\,-\,Maschine nicht cryptisch gestärkt, sondern nur gechwächt.
-	\footcite[text]{refernce}
+\section{Die Schwächen der Enigma\,-\,Maschine}
+    Durch verschiedenste Regulierungen wurde die Enigma\,-\,Maschine nicht cryptisch gestärkt, sondern nur geschwächt.
+    \subsection{Die Umkehrwalze}
 
-%\newpage
+    \subsection{Steckerbrett Bedingungen}
+
+    \subsection{Weitere Bedingungen}
+
+
+
+    Zudem gab es für jeden Monat eine Schlüsseltafel, auf welchem die Walzenlage, Ringstellung, Steckerverbindungen und Kenngruppen für den jeweiligen Tag standen.
+    Diese durften nicht mit in Flugzeuge mitgenommen werden, da sie sonst einfacher in die Hände der Alliierten fallen konnten.
+
+
 \section{Meine Enigma Implementation}
 
-\subsection{Wie funktioniert diese Implementation?}
+    \subsection{Wie funktioniert diese Implementation?}
+        In dieser Version der Enigma\,-\,Maschine gibt es zwei Verschiedene Klassen, welche miteinander interagieren und somit die eingegebene Nachricht verschlüsseln.
+
+        \subsubsection{Die Enigma} 
+            Die Klasse Enigma wird mit folgenden Parametern initialisiert und sieht so aus:
+
+            \begin{lstlisting}
+class Enigma:
+    def __init__(self, name: str, vorlage: dict, startingPosition: str):
+        self.name: str = name
+        self.type = self.name.split("-")
+        
+        self.vorlage: dict = vorlage
+        
+        self.walzenlage: list[str] = vorlage["Walzenlage"]
+        self.ringstellung: list[int] = vorlage["Ringstellung"]
+        self.steckerverbindung: list[str] = vorlage["Steckerverbindung"]
+        self.kenngruppen: list[str] = vorlage["Kenngruppen"]
+        
+        self.startingPositions: list[int] = [
+            string.ascii_uppercase.index(char) for char in startingPosition
+        ]
+        
+        self.walzen: list[Walze] = []
+            \end{lstlisting}
+
+            \emph{name\,(str)\,}: Name der Enigma\,-\,Maschine, bestehend aus \emph{Enigma} und der Modellnummer \emph{I}, welches mit einem \emph{-} getrennt ist. 
+            Dient zur identifizierung der Art der Enigma\,-\,Maschine. (\emph{Enigma\,-\,I, Enigma\,-\,M3, Enigma\,-\,G, etc.})
+
+            \emph{vorlage\,(dict)\,}: Dictionary, welches alle wichtigen Informationen für die Walzenlage, Ringstellung, Steckerverbindung und Kenngruppe beinhaltet. 
+            Die Walzenlage ist eine Liste an Strings, welche die jeweiligen Walzen spezifizieren. 
+            Die Ringstellung ist die Startposition, für den jeweiligen Tag
+
+
+        \newpage
+        \subsubsection{Die Walze}
+            \begin{lstlisting}
+class Walze:
+    def __init__(self, source: dict, start: int = 0):
+        self.walzenart: str = source["walze"]
+        self.wiring: str = source["wiring"]
+        self.encoding: list[int] = self.getEncoding()
+        
+        if self.walzenart.split(" ")[0] not in ["ETW", "UKW"]:
+            self.kerbe: list = string.ascii_uppercase.index(source["kerbe"])
+            self.rotierbar: bool = True
+        else:
+            self.kerbe = None
+            self.rotierbar = False
+        
+        self.position: int = start
+        self.modell: list = source["modell"]
+            \end{lstlisting}
+
+
 
 %\newpage
 \section{Die perfekte Enigma\,-\,Maschine}
 
 \subsection{Was ist anders an dieser Enigma\,-\,Maschine?}
 
+\section{Fazit}
 
 \end{onehalfspace}
 \newpage

@@ -121,7 +121,7 @@ class Enigma:
         :return: Liste der Walzen [etw, ukw, III, IV, V]
         :rtype: list[Walze]
         """
-        with open(f"src/enigma/{referencePath}", "r") as file: # referencePath meint hier die Rotorenliste (path)
+        with open(f"src/enigma/{referencePath}", "r") as file: 
             rotorTable: dict = json.load(file)
         
         walzen: list = []
@@ -160,4 +160,4 @@ class Enigma:
 
 
     def __repr__(self) -> str:
-        return f"{self.name, self.walzenlage, self.ringstellung, self.steckerverbindung, self.kenngruppen}"
+        return f"{self.name, self.type, self.walzenlage, self.ringstellung, self.steckerverbindung, self.kenngruppen}"

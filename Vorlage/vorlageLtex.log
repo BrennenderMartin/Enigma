@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.3)  3 FEB 2026 19:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.3)  9 FEB 2026 16:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**e:/GitHub/Enigma/Dokument/vorlageLtex.tex
-(e:/GitHub/Enigma/Dokument/vorlageLtex.tex
+**e:/GitHub/Enigma/Vorlage/vorlageLtex.tex
+(e:/GitHub/Enigma/Vorlage/vorlageLtex.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (d:/texlive/2025/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -1268,7 +1268,7 @@ Package pdftex.def Info: ./bilder/wald.jpg  used on input line 303.
 (pdftex.def)             Requested size: 341.43306pt x 193.58904pt.
 [7 <./bilder/wald.jpg>]
 
-e:/GitHub/Enigma/Dokument/vorlageLtex.tex:356: LaTeX Error: There's no line here to end.
+e:/GitHub/Enigma/Vorlage/vorlageLtex.tex:356: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1305,14 +1305,14 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
  ) 
 Here is how much of TeX's memory you used:
  26531 strings out of 467533
- 537064 string characters out of 5423669
+ 537061 string characters out of 5423669
  1300212 words of memory out of 5000000
  54990 multiletter control sequences out of 15000+600000
  656042 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,14n,108p,11310b,1752s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,14n,108p,11309b,1752s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfso1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1728.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss2074.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss2488.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on vorlageLtex.pdf (10 pages, 2122191 bytes).
+Output written on vorlageLtex.pdf (10 pages, 2122202 bytes).
 PDF statistics:
  171 PDF objects out of 1000 (max. 8388607)
  104 compressed objects within 2 object streams

@@ -1,8 +1,8 @@
-PWD e:/GitHub/Enigma/Dokument
+PWD e:/GitHub/Enigma/Vorlage
 INPUT d:/texlive/2025/texmf.cnf
 INPUT d:/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT d:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT e:/GitHub/Enigma/Dokument/vorlageLtex.tex
+INPUT e:/GitHub/Enigma/Vorlage/vorlageLtex.tex
 OUTPUT vorlageLtex.log
 INPUT d:/texlive/2025/texmf-dist/tex/latex/koma-script/scrartcl.cls
 INPUT d:/texlive/2025/texmf-dist/tex/latex/koma-script/scrartcl.cls

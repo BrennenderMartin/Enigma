@@ -39,7 +39,7 @@ def create_enigma(filePath: str, name: str, startingPosition: str):
     enigma = Enigma(name, vorlage, startingPosition)
     
     print("Output:", enigma.encode("HELLO WORLD"))
-
+    print(enigma)
 def main():
     create_enigma("vorlage.json", "Enigma-I", "QWE")
 

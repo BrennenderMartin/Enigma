@@ -10,8 +10,8 @@ class Walze:
             self.kerbe: list = string.ascii_uppercase.index(source["kerbe"])
             self.rotierbar: bool = True
         else:
-            self.kerbe = None
-            self.rotierbar = False
+            self.kerbe: list = None
+            self.rotierbar: bool = False
         
         self.position: int = start
         self.modell: list = source["modell"]

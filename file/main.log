@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.3)  9 FEB 2026 17:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.3)  10 FEB 2026 21:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -571,12 +571,12 @@ LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 80.
  [2
 
-] [3] [4] [5]
+] [3] [4] [5] [6]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 189.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 237.
 
-[6] (./main.aux)
+[7] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -586,18 +586,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14126 strings out of 467533
- 255276 string characters out of 5423669
- 1157026 words of memory out of 5000000
- 42895 multiletter control sequences out of 15000+600000
+ 14151 strings out of 467533
+ 255771 string characters out of 5423669
+ 1181096 words of memory out of 5000000
+ 42920 multiletter control sequences out of 15000+600000
  636640 words of font info for 70 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  63i,8n,66p,715b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (7 pages, 128946 bytes).
+Output written on main.pdf (8 pages, 134884 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

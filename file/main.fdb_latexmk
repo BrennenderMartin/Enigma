@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1770649935.92995 "main.bcf" "main.bbl" "main" 1770653926.39418 0
-  "main.bcf" 1770653926 108670 129885b56620ea5e4bc3efeb2d78d85e "pdflatex"
-  "referenzen.bib" 1770486823 544 17ed57a9d8c21a481365dc75df40910e ""
+["biber main"] 1770750789.92832 "main.bcf" "main.bbl" "main" 1770754887.34242 0
+  "main.bcf" 1770754887 108738 d14c6607342dfdfc812a2e171e5ddedc "pdflatex"
+  "referenzen.bib" 1770750456 813 5e1094cd1febf32bc01cc12bf187358a ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1770653924.24737 "e:/GitHub/Enigma/file/main.tex" "main.pdf" "main" 1770653926.39528 0
+["pdflatex"] 1770754885.25748 "e:/GitHub/Enigma/file/main.tex" "main.pdf" "main" 1770754887.34346 0
   "d:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1770137575 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm" 1770136689 1300 63a6111ee6274895728663cf4b4e7e81 ""
   "d:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1770136689 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -103,12 +103,12 @@
   "d:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1770141373 5587484 c7987984b6caa4aca5e7fc2e7f7fc58b ""
   "d:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1770141796 3636148 2824fa07d5b98d45d8ab2da21bd71d70 ""
   "d:/texlive/2025/texmf.cnf" 1770141330 713 e69b156964470283e0530f5060668171 ""
-  "e:/GitHub/Enigma/file/main.tex" 1770653920 8953 d5366ecdc8d89ab2e945efdfcf3f5f5f ""
-  "main.aux" 1770653926 2442 f1965d0a5a6b175575fdf0c412907f06 "pdflatex"
-  "main.bbl" 1770649938 1222 2f3027435a347c517cba1245d5e3430b "biber main"
-  "main.run.xml" 1770653926 2341 1bdbfc19fd9b37ba058cb4967fa70a0a "pdflatex"
-  "main.tex" 1770653920 8953 d5366ecdc8d89ab2e945efdfcf3f5f5f ""
-  "main.toc" 1770653926 1301 8aad1dec5a44b1cbf4f14166473cbb56 "pdflatex"
+  "e:/GitHub/Enigma/file/main.tex" 1770754883 11395 d22c7a4906911d5a00f743e58d6163c6 ""
+  "main.aux" 1770754887 2630 a3923df1bdec20724b7e3f7a4ed75103 "pdflatex"
+  "main.bbl" 1770750792 2610 5599a7069e07670047c1391dca96f539 "biber main"
+  "main.run.xml" 1770754887 2341 1bdbfc19fd9b37ba058cb4967fa70a0a "pdflatex"
+  "main.tex" 1770754883 11395 d22c7a4906911d5a00f743e58d6163c6 ""
+  "main.toc" 1770754887 1301 1dc570a575d3b5a4284437512e615b35 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

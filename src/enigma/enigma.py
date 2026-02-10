@@ -7,8 +7,6 @@ class Enigma:
         self.name: str = name
         self.type = self.name.split("-")
         
-        self.vorlage: dict = vorlage
-        
         self.walzenlage: list[str] = vorlage["Walzenlage"]
         self.ringstellung: list[int] = vorlage["Ringstellung"]
         self.steckerverbindung: list[str] = vorlage["Steckerverbindung"]

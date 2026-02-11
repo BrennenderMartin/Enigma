@@ -18,12 +18,10 @@
 
 
 \refsection{0}
-  \datalist[entry]{nyt/global//global/global/global}
+  \datalist[entry]{nty/global//global/global/global}
     \entry{Patentschrift}{online}{}{}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{url}
       \field{labeltitlesource}{title}
       \field{title}{Patentschrift Chiffrierapparat DRP Nr. 416 219}
       \field{urlday}{6}
@@ -39,7 +37,7 @@
     \endentry
     \entry{dewiki:Enigma}{misc}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9c677286866aad38f8e9b660f5411814}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
            family={Wikipedia},
            familyi={W\bibinitperiod}}}%
       }
@@ -53,8 +51,6 @@
       \strng{authorfullhashraw}{9c677286866aad38f8e9b660f5411814}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{[Online; Stand 10. Februar 2026]}
@@ -68,6 +64,8 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{referenzname}
+  \missing{typo}
 \endrefsection
 \endinput
 

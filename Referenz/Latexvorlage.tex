@@ -31,28 +31,29 @@
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
 \lstset{frame=tb,
-  language=Java,
-  aboveskip=3mm,
-  belowskip=3mm,
-  showstringspaces=false,
-  columns=flexible,
-  basicstyle={\small\ttfamily},
-  numbers=none,
-  numberstyle=\tiny\color{gray},
-  keywordstyle=\color{blue},
-  commentstyle=\color{dkgreen},
-  stringstyle=\color{mauve},
-  breaklines=true,
-  breakatwhitespace=true,
-  tabsize=3
+    language=Java,
+    aboveskip=3mm,
+    belowskip=3mm,
+    showstringspaces=false,
+    columns=flexible,
+    basicstyle={\small\ttfamily},
+    numbers=none,
+    numberstyle=\tiny\color{gray},
+    keywordstyle=\color{blue},
+    commentstyle=\color{dkgreen},
+    stringstyle=\color{mauve},
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=3
 }
 
-
+\usepackage{biblatex}
+\addbibresource{literatur.bib}
 
 % --------- Darstellung, Stil, etc. des Literaturverzeichnisses ----------
 %\usepackage[sectionbib,square]{natbib}
-\usepackage[square,sort,comma,numbers,super]{natbib}
-\bibliographystyle{plainnat} % abbrvnat, plainnat, unsrtnat
+%\usepackage[square,sort,comma,numbers,super]{natbib}
+%\bibliographystyle{plainnat} % abbrvnat, plainnat, unsrtnat
 %\usepackage[superscript]{cite}
 
 
@@ -82,7 +83,7 @@
 {\huge \textsf{Facharbeiten schreiben mit \LaTeX{} }}
 \vskip\baselineskip
 \noindent
-{\Large \textsf{Lars Linden}}
+{\Large \textsf{Mattis Jung}}
 \vskip\baselineskip
 \noindent
 \textsf{\today}
@@ -120,7 +121,7 @@ es aber muss.}{Heinz Erhardt (1909 - 1979)}
 
 \section{Ein bißchen zu \LaTeX\ und zur Typographie}
 \subsection{Typographische Feinheiten, die viele nicht kennen...}
-Hier mal der Unterscheid zwischen einem ganzen und einem halben 
+Hier mal der Unterscheid zwischen einem ganzen und einem halben\cite{Patentschrift}
 (richtige Version) Leerzeichen vor Einheiten:\\
 100 m oder auch 100m sehen weniger schön aus, als 100\,m. 
 Ein Eurosymbol erzeugt man durch einen Befehl (siehe Quelltext): 
@@ -241,26 +242,6 @@ diese einfach nach einem festgelegten Schema festgehalten und
 \LaTeX{} erstellt daraus das Literaturverzeichnis (siehe Ende 
 des Dokuments). Der Aufbau ist im Prinzip wie folgt:
 
-\begin{verbatim}
-@BOOK{hauer,
-	AUTHOR = {Dr. Andreas Hauer AND Dr. Stefan Hieblers AND Manfred Reuß},
-	YEAR = {2008},
-	TITLE = {Wärmespeicher},
-	EDITION = {5., vollständig überarbeitete Auflage},
-	ISBN = {},
-	PUBLISHER = {Fraunhofer IRB Verlag},
-	ADDRESS = {Stuttgart},
-}
-
-@MISC{spiegel,
-	AUTHOR = {Peter Zschunke},
-	YEAR = {2014},
-	TITLE = {Keine Angst vor \LaTeX},
-	URL = {http://www.spiegel.de/netzwelt/tech/textsatz...},	
-	NOTE = {- Onlineresource, eingesehen am 08.02.2018},
-}
-\end{verbatim}
-
 Am Besten gleich mal mit dem Literaturverzeichnis vergleichen (in normalem
 Editor öffnen)!
 
@@ -352,7 +333,6 @@ kamen neue, andere Aspekte hinzu.
 
 
 
-\\
 
 
 
@@ -385,8 +365,8 @@ Velbert, den \today
 % Hier werden die Referenzen, welche mit % \cite[S. 101-107]{rferenzname} 
 % eingetragen werden geschrieben.
 
-\newpage
-\bibliography{literatur.bib}
+%\newpage
+%\bibliography{literatur.bib}
 
 
 %\addcontentsline{toc}{section}{Literatur}

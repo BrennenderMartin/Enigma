@@ -30,21 +30,22 @@
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
-\lstset{frame=tb,
-    language=Java,
-    aboveskip=3mm,
-    belowskip=3mm,
-    showstringspaces=false,
-    columns=flexible,
-    basicstyle={\small\ttfamily},
-    numbers=none,
-    numberstyle=\tiny\color{gray},
-    keywordstyle=\color{blue},
-    commentstyle=\color{dkgreen},
-    stringstyle=\color{mauve},
-    breaklines=true,
-    breakatwhitespace=true,
-    tabsize=3
+\lstset{
+  frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
 }
 
 \usepackage{biblatex}
@@ -175,9 +176,6 @@ Parallel dazu füllt man sein eigenes Dokument (\emph{Facharbeit.tex}).
       
       \textbf{Parameter: }
 
-      \emph{self}: Wird benötigt, damit Objekte dieser Klasse auf sich selbst zurückverweisen können.
-      Parameter in allen Funktionen der Klasse.
-      
       \emph{name\,(str)}: Name der Enigma\,-\,Maschine, bestehend aus \emph{Enigma} und der Modellnummer \emph{I}, welches mit einem \emph{-} getrennt ist. 
       Dient zur identifizierung der Art der Enigma\,-\,Maschine.\ (\emph{Enigma\,-\,I, Enigma\,-\,M3, Enigma\,-\,G, etc.})
 
@@ -215,7 +213,7 @@ Parallel dazu füllt man sein eigenes Dokument (\emph{Facharbeit.tex}).
 
   \subsection{Was ist anders an dieser Enigma\,-\,Maschine?}
 
-%\section{Fazit}
+\section{Fazit}
 
 
 % -------- Hier beginnt der eigentliche Inhalt ------------
@@ -471,6 +469,7 @@ Velbert, den \today
 
 %\newpage
 %\bibliography{literatur.bib}
+\printbibliography
 
 
 %\addcontentsline{toc}{section}{Literatur}

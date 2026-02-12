@@ -1,34 +1,35 @@
 \babel@toc {german}{}\relax 
-\contentsline {section}{\numberline {1}Einleitung}{3}{}%
-\contentsline {section}{\numberline {2}Die Enigma\,-\,Maschine}{3}{}%
-\contentsline {subsection}{\numberline {2.1}Wie die Enigma\,-\,Maschine entstand}{3}{}%
-\contentsline {subsection}{\numberline {2.2}Wie die Enigma\,-\,Maschine funktioniert}{3}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Das Steckerbrett}{3}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}Die Walzen}{4}{}%
-\contentsline {section}{\numberline {3}Die Schwächen der Enigma\,-\,Maschine}{4}{}%
-\contentsline {subsection}{\numberline {3.1}Die Umkehrwalze}{4}{}%
-\contentsline {subsection}{\numberline {3.2}Steckerbrett Bedingungen}{4}{}%
-\contentsline {subsection}{\numberline {3.3}Weitere Bedingungen}{4}{}%
-\contentsline {section}{\numberline {4}Meine Enigma Implementation}{5}{}%
-\contentsline {subsection}{\numberline {4.1}Wie funktioniert diese Implementation?}{5}{}%
-\contentsline {subsubsection}{\numberline {4.1.1}Die Enigma}{5}{}%
-\contentsline {subsubsection}{\numberline {4.1.2}Die Walze}{6}{}%
-\contentsline {section}{\numberline {5}Die perfekte Enigma\,-\,Maschine}{6}{}%
-\contentsline {subsection}{\numberline {5.1}Was ist anders an dieser Enigma\,-\,Maschine?}{6}{}%
-\contentsline {section}{\numberline {6}Einleitung}{6}{}%
-\contentsline {section}{\numberline {7}Ein bißchen zu \LaTeX \ und zur Typographie}{6}{}%
-\contentsline {subsection}{\numberline {7.1}Typographische Feinheiten, die viele nicht kennen...}{6}{}%
-\contentsline {subsection}{\numberline {7.2}Ein paar Beispiele für den Einsatz von \LaTeX }{7}{}%
-\contentsline {subsubsection}{\numberline {7.2.1}Darstellung Chemie}{7}{}%
-\contentsline {subsubsection}{\numberline {7.2.2}Darstellung Mathematik}{7}{}%
-\contentsline {subsubsection}{\numberline {7.2.3}Darstellung von Quellcode}{8}{}%
-\contentsline {subsubsection}{\numberline {7.2.4}Darstellung von Zitaten, Quellen, etc.}{9}{}%
-\contentsline {subsubsection}{\numberline {7.2.5}Die Datei \emph {literatur.bib}}{9}{}%
-\contentsline {subsubsection}{\numberline {7.2.6}Zitate aus anderen Werken}{9}{}%
-\contentsline {subsubsection}{\numberline {7.2.7}Gedichte in Versform}{10}{}%
-\contentsline {subsubsection}{\numberline {7.2.8}Farbhervorhebungen}{10}{}%
-\contentsline {subsubsection}{\numberline {7.2.9}Bilder}{10}{}%
-\contentsline {subsubsection}{\numberline {7.2.10}Tabellen}{11}{}%
-\contentsline {subsubsection}{\numberline {7.2.11}Erweiterungen}{11}{}%
-\contentsline {section}{\numberline {8}Vorbereitungen zum Schreiben einer Facharbeit}{11}{}%
+\contentsline {section}{\numberline {1}Einleitung}{4}{}%
+\contentsline {section}{\numberline {2}Die Enigma\,-\,Maschine}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Wie die Enigma\,-\,Maschine entstand}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Wie die Enigma\,-\,Maschine funktioniert}{4}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Das Steckerbrett}{4}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Die Walzen}{5}{}%
+\contentsline {section}{\numberline {3}Die Schwächen der Enigma\,-\,Maschine}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Die Umkehrwalze}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Steckerbrett Bedingungen}{5}{}%
+\contentsline {subsection}{\numberline {3.3}Weitere Bedingungen}{5}{}%
+\contentsline {section}{\numberline {4}Meine Enigma Implementation}{6}{}%
+\contentsline {subsection}{\numberline {4.1}Wie funktioniert diese Implementation?}{6}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}Die Enigma}{6}{}%
+\contentsline {subsubsection}{\numberline {4.1.2}Die Walze}{7}{}%
+\contentsline {section}{\numberline {5}Die perfekte Enigma\,-\,Maschine}{7}{}%
+\contentsline {subsection}{\numberline {5.1}Was ist anders an dieser Enigma\,-\,Maschine?}{7}{}%
+\contentsline {section}{\numberline {6}Fazit}{7}{}%
+\contentsline {section}{\numberline {7}Einleitung}{7}{}%
+\contentsline {section}{\numberline {8}Ein bißchen zu \LaTeX \ und zur Typographie}{7}{}%
+\contentsline {subsection}{\numberline {8.1}Typographische Feinheiten, die viele nicht kennen...}{7}{}%
+\contentsline {subsection}{\numberline {8.2}Ein paar Beispiele für den Einsatz von \LaTeX }{8}{}%
+\contentsline {subsubsection}{\numberline {8.2.1}Darstellung Chemie}{8}{}%
+\contentsline {subsubsection}{\numberline {8.2.2}Darstellung Mathematik}{8}{}%
+\contentsline {subsubsection}{\numberline {8.2.3}Darstellung von Quellcode}{9}{}%
+\contentsline {subsubsection}{\numberline {8.2.4}Darstellung von Zitaten, Quellen, etc.}{10}{}%
+\contentsline {subsubsection}{\numberline {8.2.5}Die Datei \emph {literatur.bib}}{10}{}%
+\contentsline {subsubsection}{\numberline {8.2.6}Zitate aus anderen Werken}{10}{}%
+\contentsline {subsubsection}{\numberline {8.2.7}Gedichte in Versform}{11}{}%
+\contentsline {subsubsection}{\numberline {8.2.8}Farbhervorhebungen}{11}{}%
+\contentsline {subsubsection}{\numberline {8.2.9}Bilder}{11}{}%
+\contentsline {subsubsection}{\numberline {8.2.10}Tabellen}{12}{}%
+\contentsline {subsubsection}{\numberline {8.2.11}Erweiterungen}{12}{}%
+\contentsline {section}{\numberline {9}Vorbereitungen zum Schreiben einer Facharbeit}{12}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

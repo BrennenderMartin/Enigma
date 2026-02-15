@@ -1,4 +1,5 @@
 import json
+import string
 from enigma.enigma import Enigma
 
 """
@@ -40,8 +41,10 @@ def create_enigma(filePath: str, name: str, startingPosition: str):
     
     print("Output:", enigma.encode("HELLO WORLD"))
     print(enigma)
+    
 def main():
-    create_enigma("vorlage.json", "Enigma-I", "QWE")
+    print(string.ascii_uppercase.index("Z"))
+    #create_enigma("vorlage.json", "Enigma-I", "QWE")
 
 if __name__ == "__main__":
     main()

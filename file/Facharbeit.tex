@@ -48,6 +48,7 @@
   tabsize=3
 }
 
+\usepackage{csquotes}
 \usepackage{biblatex}
 \addbibresource{referenzen.bib}
 
@@ -111,110 +112,115 @@ Parallel dazu füllt man sein eigenes Dokument (\emph{Facharbeit.tex}).
 
 % Hier wird automatisch das Inhaltsverzeichnis generiert
 \newpage
+\thispagestyle{empty}
 \tableofcontents 
 \newpage
 
 \section{Einleitung}
+Die Enigma gilt bis heute als eines der bekanntesten Symbole für geheime Kommunikation im Zweiten Weltkrieg. Ihre Technik wirkt auf den ersten Blick fast spielerisch: Man drückt eine Taste, und an anderer Stelle leuchtet ein Buchstabe auf. Hinter dieser scheinbaren Einfachheit steckt jedoch ein ausgeklügeltes System aus vertauschten Kontakten und rotierenden Walzen.
 
 
-\section{Die Enigma\,-\,Maschine}
-  Die Enigma\,-\,Maschine ist eine Chiffriermaschine, die durch die Nutzung von Permutation und Subststution der Buchstaben einer Nachricht, diese Buchstabe für Buchstabe verschlüsselt.
+\section{Die Enigma}
+  Die Enigma ist eine elektromechanische Chiffriermaschine. Sie verschlüsselt eine Nachricht buchstabenweise, indem sie die Zeichen über mehrere Stufen vertauscht (\emph{Permutation}) und ersetzt (\emph{Substitution}).
 
-  \subsection{Wie die Enigma\,-\,Maschine entstand}
-    Die Idee der Enigma\,-\,Maschine entstand bereits im ersten Weltkrieg, als die deutschen eine möglichkeit brauchten geheime Nachrichten an die Front zu schicken, ohne dass Alliierte Truppen diese mitbekommen.
-    Deshalb kam Arthur Scherbius (1878\,-\,1929) auf die Idee eine Rotor-Schlüsselmaschine zu erfinden, welche er am 23. Februar 1918 auch patentieren ließ.\ \cite{Patentschrift}
-    Der Name der Enigma\,-\,Maschine entstand Ende 1923, als Scherbius seine Erfindung nach dem Griechischem Wort \emph{enigma} bennante, welches Rätsel bedeutet.
+  \subsection{Wie sie entstand}
+    Die Idee zur Enigma entstand bereits im Ersten Weltkrieg: Die Deutschen benötigten eine Möglichkeit, geheime Nachrichten an die Front zu übermitteln, ohne dass alliierte Truppen sie mitlesen konnten.
+    Arthur Scherbius (1878\,-\,1929) entwickelte deshalb die Idee einer Rotor\,-\,Schlüsselmaschine und ließ sie am 23. Februar 1918 patentieren.\ \cite{Patentschrift}
+    Ende 1923 erhielt die Maschine ihren Namen, als Scherbius die Erfindung nach dem griechischen Wort \emph{enigma} (\enquote{Rätsel}) benannte.
 
-    Über die Jahre wurde diese immer populärer in Deutschland und nach Ende des zweiten Weltkrieges wurde verschiedenste, von den deutschen zurückgelassene, Exemplare modifiziert und auch weiter benutzt. 
-    Ein Beispiel hierfür ist die \emph{Norenigma}, welche eine in Norwegen modifizierte Version der deutschen Enigma\,-\,Maschine ist.
+    Mit der Zeit wurde die Enigma in Deutschland immer populärer. Nach dem Ende des Zweiten Weltkriegs wurden viele von den Deutschen zurückgelassene Exemplare umgebaut und weiterverwendet.
+    Ein Beispiel ist die \emph{Norenigma}, eine in Norwegen modifizierte Version der deutschen Enigma.
 
-  \subsection{Wie die Enigma\,-\,Maschine funktioniert}
-    Von Außen sieht die Enigma\,-\,Maschine einer Schreibmaschine nicht ganz unähnlich, nur hier hat man nicht nur die Tastatur, sondern auch ein Glühlampenbrett, wo es für jede Taste der Tastatur eine Glühlampe gibt, die aufleuchtet, wenn eine Taste gedrückt wird.
-    Dazu besteht die Enigma\,-\,Maschine aus 2 wichtigen Chiffrierteilen.
+  \subsection{Wie sie funktioniert}
+    Von außen erinnert die Enigma an eine Schreibmaschine. Neben der Tastatur besitzt sie jedoch ein Glühlampenfeld: Zu jeder Taste gehört eine Lampe, die beim Tastendruck den verschlüsselten Buchstaben anzeigt.
+    Im Kern arbeitet die Enigma mit zwei entscheidenden Chiffrierelementen: dem Steckerbrett und den Walzen.
 
     \subsubsection{Das Steckerbrett} 
-      Dort werden alle Buchstaben die es in der Tastatur gibt angezeigt und man kann Kabel in den jeweiligen Buchstaben stecken und diesen dann mit einem andern verbinden.
-      Dies sorgt dafür, dass der eingegebene Buchstabe durch den zweiten ersetzt wird, also dass eine \emph{Permutation} stattfindet.
-      Wenn ein Buchstabe in der Enigma\,-\,Maschine mit einem anderen verkabelt ist, nennt man ihn \emph{gesteckert}.
-      In der Maschine sind immer 20 Buchstaben miteinander gesteckert und die restlichen 6 sind ungesteckert. 
-      Außerdem durften zwei im Alphabet aufeinanderfolgende Buchstaben nicht miteinander gesteckert sein.
-      Diese beiden Regelungen machten die Entschlüsselung der Enigma\,-\,Maschine für die Alliierte nicht schwerer, sondern nur leichter.
+      Auf dem Steckerbrett sind alle Buchstaben der Tastatur aufgeführt. Mit Steckerkabeln lassen sich jeweils zwei Buchstaben miteinander verbinden.
+      Dadurch wird ein eingegebener Buchstabe in seinen Partnerbuchstaben umgewandelt --- es entsteht eine zusätzliche Vertauschung (\emph{Permutation}).
+      Ist ein Buchstabe mit einem anderen verbunden, nennt man ihn \emph{gesteckert}.
+      In der Standardkonfiguration werden 10 Kabel gesteckt: 20 Buchstaben sind paarweise verbunden, die übrigen 6 bleiben ungesteckert.
+      Zusätzlich galt die Regel, dass zwei im Alphabet direkt aufeinanderfolgende Buchstaben nicht miteinander gesteckert werden durften.
+      Solche Vorgaben machten die Arbeit der Alliierten nicht schwieriger, sondern schränkten die möglichen Einstellungen weiter ein.
 
     \subsubsection{Die Walzen}
-      Diese haben auf beiden Seiten je 26 Kontaktpunkt, welche in der Walze mit je einem andern Kontaktpunkt verkabelt sind.
-      Dies funktioniert aber nicht so, dass das \emph{A} auf der rechten Seite immer mit dem \emph{A} verkabelt ist, sondern meistens mit einem andern Buchstaben (\emph{E}), dadurch entsteht eine \emph{Substitution}.
-      Durch die Nutzung von meist 3 Walzen (Die \emph{Enigma-M4} nutze beispielsweise 4) steigt die verschlüsselungsstärke der Enigma\,-\,Maschine exponentiell.
-      Die Walzen hatten außerdem eine oder mehrere Kerben, welche dafür sorgten, dass nicht nur die erste Walze rotiert, sondern auch die nächsten mit rotieren.
+      Die Walzen besitzen auf beiden Seiten jeweils 26 Kontaktpunkte. Im Inneren ist jeder Kontaktpunkt mit genau einem anderen verdrahtet.
+      Das bedeutet: Ein \emph{A} wird nicht zwangsläufig wieder zu \emph{A}, sondern beispielsweise zu \emph{E} --- eine \emph{Substitution}.
+      Werden mehrere Walzen hintereinandergeschaltet (meist drei; die \emph{Enigma\,-\,M4} nutzte beispielsweise vier), wächst die Anzahl der möglichen Verschlüsselungen sprunghaft.
+      Außerdem drehen sich die Walzen weiter: Nach jedem Tastendruck rotiert mindestens die rechte Walze. Erreicht sie ihre Kerbe, wird auch die nächste Walze weitergeschaltet usw.
 
-      Da die meisten Walzen nur eine Kerbe hatten war es selten, dass sich die letzt Walze wirklich viel verändert. 
-      Für den Funkverkehr der Achsenmächte nach Japan hatten die deutschen aber eine alternative, da sie bei dieser Version der Enigma\,-\,Maschine nicht eine, sondern fünf Übertragungskerben hatten, welche diese Enigma\,-\,Maschine stärker machte als die in Deutschland am meisten verbreiteten Enigma\,-\,Maschinen (\emph{Enigma-T} oder auch \emph{Tirpitz} genannte Enigma\,-\,Maschine für den Funk nach Japan). 
-      Aber auch in Deutschland gab es Enigma\,-\,Maschine mit mehreren Übertragungskerben, wie die Abwehr\,-\,Enigma (G), welche bis zu 17 Übertragungskerben hatte.
+      Da die meisten Walzen nur eine Kerbe besaßen, änderte sich die linke Walze im Vergleich selten.
+      Für den Funkverkehr der Achsenmächte nach Japan verwendeten die Deutschen jedoch eine Variante mit fünf Übertragungskerben, was diese Version gegenüber den in Deutschland am weitesten verbreiteten Enigma\,-\,Modellen stärkte (\emph{Enigma\,-\,T}, auch \emph{Tirpitz} genannt).
+      Aber auch in Deutschland gab es Enigma\,-\,Varianten mit mehreren Übertragungskerben, wie die Abwehr\,-\,Enigma (G), die bis zu 17 Übertragungskerben hatte.
 
 
-\section{Die Schwächen der Enigma\,-\,Maschine}
-  Durch verschiedenste Regulierungen wurde die Enigma\,-\,Maschine nicht cryptisch gestärkt, sondern nur geschwächt.
+\section{Die Schwächen der Enigma}
+  Durch verschiedene Regulierungen wurde die Enigma nicht kryptografisch gestärkt, sondern in entscheidenden Punkten sogar geschwächt.
   \subsection{Die Umkehrwalze}
 
   \subsection{Steckerbrett Bedingungen}
 
   \subsection{Weitere Bedingungen}
 
-  Zudem gab es für jeden Monat eine Schlüsseltafel, auf welchem die Walzenlage, Ringstellung, Steckerverbindungen und Kenngruppen für den jeweiligen Tag standen.
-  Diese durften nicht mit in Flugzeuge mitgenommen werden, da sie sonst einfacher in die Hände der Alliierten fallen konnten.
+  Zudem gab es für jeden Monat eine Schlüsseltafel, auf der Walzenlage, Ringstellung, Steckerverbindungen und Kenngruppen für jeden Tag festgelegt waren.
+  Diese Tafeln durften nicht an Bord von Flugzeugen mitgenommen werden, da sie sonst leichter in die Hände der Alliierten fallen konnten.
 
 
-\section{Meine Enigma Implementation}
+\section{Meine Enigma Implementierung}
 
-  \subsection{Wie funktioniert diese Implementation?}
-    In dieser Version der Enigma\,-\,Maschine gibt es zwei Verschiedene Klassen, welche miteinander interagieren und somit die eingegebene Nachricht verschlüsseln.
-    Die erste und größere Klasse ist die Enigma\,-\,Klasse, in welcher die meiste Logik geschieht.
-    Sie erstellt beim starten des Verschlüsseln die Walzen, in welcher nur die einzelne Ersetzung der Buchstaben geschieht.
-    Das Steckerbrett ist Teil der Enigma\,-\,Klasse und tauscht die gesteckerten Buchstaben vor und nach durchlaufen der Rotoren mit dem jeweils anderen aus.
+  \subsection{Wie funktioniert diese Implementierung?}
+    In meiner Version der Enigma arbeiten zwei Klassen zusammen, um eine eingegebene Nachricht zu verschlüsseln.
+    Die größere Klasse ist die Enigma\,-\,Klasse: Dort liegt die zentrale Logik.
+    Beim Start der Verschlüsselung erzeugt sie die benötigten Walzen; in diesen findet die eigentliche Buchstaben\,-\,Ersetzung statt.
+    Das Steckerbrett ist ebenfalls Teil der Enigma\,-\,Klasse und vertauscht gesteckerte Buchstaben sowohl vor als auch nach dem Durchlaufen der Rotoren.
 
     \subsubsection{Die Enigma} 
-      Die Klasse Enigma wird mit folgenden Parametern initialisiert und sieht so aus:
+      Die Klasse Enigma wird mit folgenden Parametern initialisiert und ist wie folgt aufgebaut:
       
       \textbf{Parameter: }
 
-      \emph{name\,(str)}: Name der Enigma\,-\,Maschine, bestehend aus \emph{Enigma} und der Modellnummer \emph{I}, welches mit einem \emph{-} getrennt ist. 
-      Dient zur identifizierung der Art der Enigma\,-\,Maschine.\ (\emph{Enigma\,-\,I, Enigma\,-\,M3, Enigma\,-\,G, etc.})
+      \emph{name\,(str)}: Name der Enigma, bestehend aus \emph{Enigma} und der Modellbezeichnung (z.\,B. \emph{I}), getrennt durch ein \emph{-}.
+      Dient zur Identifizierung der Art der Enigma (\emph{Enigma\,-\,I, Enigma\,-\,M3, Enigma\,-\,G}, etc.).
 
-      \emph{vorlage\,(dict)}: Dictionary, welches alle wichtigen Informationen für die Walzenlage, Ringstellung, Steckerverbindung und Kenngruppe beinhaltet. 
-      Die Walzenlage ist eine Liste an Strings, welche die jeweiligen Walzen spezifizieren. 
-      Die Ringstellung ist eine Liste an Zahlen, welche den Rotationsversatz zwischen der inneren Verdrahtung der Walzen und den außen zu sehenden Buchstaben oder Zahlen\ \footcite{dewiki:Enigma} angeben.
-      Die Steckerverbindung ist eine 10 Elemente lange Liste and 2 Zeichen langen Strings, welche angibt, welche Buchstaben miteinander gesteckert sind, da es nur 10 Elemente gibt müssen 6 Buchstaben des Alphabets ungesteckert sein.
-      Die Kenngruppen ist eine Liste an Strings, welche mögliche Kenngruppen für den jeweiligen Tag angeben. Davon müssen drei in die zu verschlüsselne Nachricht eingebaut werden, inden man sie permutiert mit zwei Füllbuchstaben der Nachricht unverschlüsselt voranstellt.
+      \emph{vorlage\,(dict)}: Dictionary, das alle wichtigen Informationen zu Walzenlage, Ringstellung, Steckerverbindungen und Kenngruppen enthält.
+      Die Walzenlage ist eine Liste von Strings, die die jeweiligen Walzen spezifizieren.
+      Die Ringstellung ist eine Liste von Zahlen, die den Rotationsversatz zwischen der inneren Verdrahtung der Walzen und den außen sichtbaren Buchstaben bzw. Zahlen angibt\footcite{dewiki:Enigma}.
+      Die Steckerverbindung ist eine zehn Elemente lange Liste aus Strings mit je zwei Zeichen. Sie legt fest, welche Buchstaben miteinander gesteckert sind; dadurch bleiben sechs Buchstaben des Alphabets ungesteckert.
+      Die Kenngruppen sind eine Liste von Strings, die mögliche Kenngruppen für den jeweiligen Tag angeben. Davon müssen drei in die zu verschlüsselnde Nachricht eingebaut werden, indem man sie permutiert und mit zwei Füllbuchstaben unverschlüsselt voranstellt.
 
-      \emph{startingPosition\,(str)}: Ein String bestehend aus drei Zeichen, welche die Grundstellung für die Walzen angibt. 
+      \emph{startingPosition\,(str)}: Ein String aus drei Zeichen, der die Grundstellung der Walzen festlegt.
       Das erste Zeichen steht für die schnellste Walze (ganz rechts), das zweite für die mittlere Walze und das dritte für die langsamste Walze (ganz links).
-      Dieser wird beim initialisieren in eine Liste mit dem jeweiligen Zahlenwert für den Buchstaben umgewandelt.
+      Beim Initialisieren wird dieser String in eine Liste mit den jeweiligen Zahlenwerten der Buchstaben umgewandelt.
 
       \textbf{Funktionen:}
 
-      \emph{encode}:
+      \emph{encode}: Verschlüsselt den eingegebenen Text.
 
-      \emph{getEnigmaString}:
+      \emph{getEnigmaString}: Formatiert den Ausgabetext (z.\,B. in 5er\,-\,Gruppen).
 
-      \emph{stecker}:
+      \emph{stecker}: Wendet eine einzelne Stecker\,-\,Vertauschung an.
 
-      \emph{steckerbrett}:
+      \emph{steckerbrett}: Wendet das Steckerbrett auf einen gesamten Text an.
 
-      \emph{rotors}:
+      \emph{rotors}: Führt den Lauf durch die Rotoren aus.
 
-      \emph{rotate}:
+      \emph{rotate}: Rotiert die Walzen gemäß Kerben\,-\,Mechanik.
 
-      \emph{findRotors}:
+      \emph{findRotors}: Lädt und erzeugt die benötigten Walzen.
 
     \subsubsection{Die Walze}
-      Die Klasse Walze wird mit folgenden Parametern initialisiert und sieht so aus:
+      Die Klasse Walze wird mit folgenden Parametern initialisiert und ist entsprechend aufgebaut:
 
 
-\section{Die perfekte Enigma\,-\,Maschine}
+\section{Die perfekte Enigma}
 
-  \subsection{Was ist anders an dieser Enigma\,-\,Maschine?}
+
+  \subsection{Was ist anders an dieser Enigma?}
+  
 
 \section{Fazit}
 
+\newpage
 
 % -------- Hier beginnt der eigentliche Inhalt ------------
 \section{Einleitung}
@@ -407,7 +413,7 @@ importiert werden können. Es gibt z.\,B. Pakete für Kochbücher, Puzzle,
 Kreuzworträtsel, elektronische Schaltsymbole und weiß der Geier was noch.
 
 
-\section{Vorbereitungen zum Schreiben einer Facharbeit}
+\subsection{Vorbereitungen zum Schreiben einer Facharbeit}
 Während der Orientierungsphase ist es sehr wichtig, sich Notizen zu machen. Jede 
 gesammelte Information sollte in Stichworten festgehalten werden und zwar so, 
 daß sie jederzeit wiedergefunden werden kann.

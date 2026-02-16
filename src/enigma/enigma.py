@@ -27,8 +27,8 @@ class Enigma:
     def type(self, text: str) -> str:
         output: str = ""
         for char in text:
-            if (0 <= char <= 25):
+            if (0 <= string.ascii_uppercase.index(char) <= 25):
                 output += self.rotorsEncryption(char)
     
-    def rotorsEncryption(self, item: str) -> str:
+    def rotorsEncryption(self, char: str) -> str:
         ...

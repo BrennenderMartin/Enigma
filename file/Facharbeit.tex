@@ -117,27 +117,36 @@ Parallel dazu füllt man sein eigenes Dokument (\emph{Facharbeit.tex}).
 \newpage
 
 \section{Einleitung}
-Die Enigma gilt bis heute als eines der bekanntesten Symbole für geheime Kommunikation im Zweiten Weltkrieg. Ihre Technik wirkt auf den ersten Blick fast spielerisch: Man drückt eine Taste, und an anderer Stelle leuchtet ein Buchstabe auf. Hinter dieser scheinbaren Einfachheit steckt jedoch ein ausgeklügeltes System aus vertauschten Kontakten und rotierenden Walzen.
+
 
 
 \section{Die Enigma}
-  Die Enigma ist eine elektromechanische Chiffriermaschine. Sie verschlüsselt eine Nachricht buchstabenweise, indem sie die Zeichen über mehrere Stufen vertauscht (\emph{Permutation}) und ersetzt (\emph{Substitution}).
+  Die Enigma ist eine elektromechanische Chiffriermaschine. 
+  Sie verschlüsselt eine Nachricht buchstabenweise, indem sie die Zeichen über mehrere Stufen vertauscht (\emph{Permutation}) und ersetzt (\emph{Substitution}).
 
   \subsection{Wie sie entstand}
-    Die Idee zur Enigma entstand bereits im Ersten Weltkrieg: Die Deutschen benötigten eine Möglichkeit, geheime Nachrichten an die Front zu übermitteln, ohne dass alliierte Truppen sie mitlesen konnten.
+    Die Idee zur Enigma entstand bereits im Ersten Weltkrieg: 
+    Die Deutschen benötigten eine Möglichkeit, geheime Nachrichten an die Front zu übermitteln, ohne dass alliierte Truppen sie mitlesen konnten.
     Arthur Scherbius (1878\,-\,1929) entwickelte deshalb die Idee einer Rotor\,-\,Schlüsselmaschine und ließ sie am 23. Februar 1918 patentieren.\ \cite{Patentschrift}
     Ende 1923 erhielt die Maschine ihren Namen, als Scherbius die Erfindung nach dem griechischen Wort \emph{enigma} (\enquote{Rätsel}) benannte.
 
-    Mit der Zeit wurde die Enigma in Deutschland immer populärer. Nach dem Ende des Zweiten Weltkriegs wurden viele von den Deutschen zurückgelassene Exemplare umgebaut und weiterverwendet.
+    Mit der Zeit wurde die Enigma in Deutschland immer populärer. 
+    Nach dem Ende des Zweiten Weltkriegs wurden viele von den Deutschen zurückgelassene Exemplare umgebaut und weiterverwendet.
     Ein Beispiel ist die \emph{Norenigma}, eine in Norwegen modifizierte Version der deutschen Enigma.
 
   \subsection{Wie sie funktioniert}
-    Von außen erinnert die Enigma an eine Schreibmaschine. Neben der Tastatur besitzt sie jedoch ein Glühlampenfeld: Zu jeder Taste gehört eine Lampe, die beim Tastendruck den verschlüsselten Buchstaben anzeigt.
-    Im Kern arbeitet die Enigma mit zwei entscheidenden Chiffrierelementen: dem Steckerbrett und den Walzen.
+    Von außen erinnert die Enigma an eine Schreibmaschine. 
+    Neben der Tastatur besitzt sie jedoch ein Glühlampenfeld: 
+    Zu jeder Taste gehört eine Lampe, die beim Tastendruck den verschlüsselten Buchstaben anzeigt.
+    Im Kern arbeitet die Enigma mit zwei entscheidenden Chiffrierelementen: 
+    dem Steckerbrett und den Walzen.
 
     \subsubsection{Das Steckerbrett} 
-      Auf dem Steckerbrett sind alle Buchstaben der Tastatur aufgeführt. Mit Steckerkabeln lassen sich jeweils zwei Buchstaben miteinander verbinden.
-      Dadurch wird ein eingegebener Buchstabe in seinen Partnerbuchstaben umgewandelt --- es entsteht eine zusätzliche Vertauschung (\emph{Permutation}).
+      Auf dem Steckerbrett sind alle Buchstaben der Tastatur aufgeführt. 
+      Mit Steckerkabeln lassen sich jeweils zwei Buchstaben miteinander verbinden.
+      Dadurch wird ein eingegebener Buchstabe in seinen Partnerbuchstaben umgewandelt.
+      Es entsteht eine zusätzliche Vertauschung (\emph{Permutation}).
+
       Ist ein Buchstabe mit einem anderen verbunden, nennt man ihn \emph{gesteckert}.
       In der Standardkonfiguration werden 10 Kabel gesteckt: 20 Buchstaben sind paarweise verbunden, die übrigen 6 bleiben ungesteckert.
       Zusätzlich galt die Regel, dass zwei im Alphabet direkt aufeinanderfolgende Buchstaben nicht miteinander gesteckert werden durften.
@@ -145,9 +154,12 @@ Die Enigma gilt bis heute als eines der bekanntesten Symbole für geheime Kommun
 
     \subsubsection{Die Walzen}
       Die Walzen besitzen auf beiden Seiten jeweils 26 Kontaktpunkte. Im Inneren ist jeder Kontaktpunkt mit genau einem anderen verdrahtet.
-      Das bedeutet: Ein \emph{A} wird nicht zwangsläufig wieder zu \emph{A}, sondern beispielsweise zu \emph{E} --- eine \emph{Substitution}.
+      Das bedeutet: 
+      Ein \emph{A} wird nicht zwangsläufig wieder zu \emph{A}, sondern beispielsweise zu \emph{E}, eine \emph{Substitution}.
       Werden mehrere Walzen hintereinandergeschaltet (meist drei; die \emph{Enigma\,-\,M4} nutzte beispielsweise vier), wächst die Anzahl der möglichen Verschlüsselungen sprunghaft.
-      Außerdem drehen sich die Walzen weiter: Nach jedem Tastendruck rotiert mindestens die rechte Walze. Erreicht sie ihre Kerbe, wird auch die nächste Walze weitergeschaltet usw.
+      Außerdem drehen sich die Walzen weiter: 
+      Nach jedem Tastendruck rotiert mindestens die rechte Walze. 
+      Erreicht sie ihre Kerbe, wird auch die nächste Walze weitergeschaltet usw.
 
       Da die meisten Walzen nur eine Kerbe besaßen, änderte sich die linke Walze im Vergleich selten.
       Für den Funkverkehr der Achsenmächte nach Japan verwendeten die Deutschen jedoch eine Variante mit fünf Übertragungskerben, was diese Version gegenüber den in Deutschland am weitesten verbreiteten Enigma\,-\,Modellen stärkte (\emph{Enigma\,-\,T}, auch \emph{Tirpitz} genannt).
@@ -156,9 +168,14 @@ Die Enigma gilt bis heute als eines der bekanntesten Symbole für geheime Kommun
 
 \section{Die Schwächen der Enigma}
   Durch verschiedene Regulierungen wurde die Enigma nicht kryptografisch gestärkt, sondern in entscheidenden Punkten sogar geschwächt.
-  \subsection{Die Umkehrwalze}
+
+    Die Umkehrwalze funktioniert nicht so wie die anderen Walzen, da sie nur eine Kontaktplatte hat, auf welcher die Kontakte miteinander verkabelt ist. 
+    Das führt dazu, dass wenn man ein \emph{B} eintippt und ein \emph{K} aufleuchtet, auch beim eintippen vom \emph{K} das \emph{B} aufleuchtet.
 
   \subsection{Steckerbrett Bedingungen}
+    Das Steckerbrett vertauscht Buchstaben, die miteinander gesteckert sind. 
+    Dabei durften aber nur 20 von den 26 Buchstaben gesteckert sein.
+    Die restlichen sechs blieben ungesteckert.
 
   \subsection{Weitere Bedingungen}
 
@@ -184,7 +201,7 @@ Die Enigma gilt bis heute als eines der bekanntesten Symbole für geheime Kommun
 
       \emph{vorlage\,(dict)}: Dictionary, das alle wichtigen Informationen zu Walzenlage, Ringstellung, Steckerverbindungen und Kenngruppen enthält.
       Die Walzenlage ist eine Liste von Strings, die die jeweiligen Walzen spezifizieren.
-      Die Ringstellung ist eine Liste von Zahlen, die den Rotationsversatz zwischen der inneren Verdrahtung der Walzen und den außen sichtbaren Buchstaben bzw. Zahlen angibt\footcite{dewiki:Enigma}.
+      Die Ringstellung ist eine Liste von Zahlen, die den Rotationsversatz zwischen der inneren Verdrahtung der Walzen und den außen sichtbaren Buchstaben bzw. Zahlen angibt.
       Die Steckerverbindung ist eine zehn Elemente lange Liste aus Strings mit je zwei Zeichen. Sie legt fest, welche Buchstaben miteinander gesteckert sind; dadurch bleiben sechs Buchstaben des Alphabets ungesteckert.
       Die Kenngruppen sind eine Liste von Strings, die mögliche Kenngruppen für den jeweiligen Tag angeben. Davon müssen drei in die zu verschlüsselnde Nachricht eingebaut werden, indem man sie permutiert und mit zwei Füllbuchstaben unverschlüsselt voranstellt.
 

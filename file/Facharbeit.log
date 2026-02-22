@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.3)  21 FEB 2026 17:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.3)  22 FEB 2026 23:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1468,31 +1468,30 @@ Overfull \hbox (46.94794pt too wide) in paragraph at lines 77--80
 
 
 {d:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./bilder/header.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 105.
+Overfull \hbox (1.247pt too wide) in paragraph at lines 104--108
+[]\T1/cmr/m/n/12 Diese Fach-ar-beit un-ter-sucht die Enigma-Verschlüsselung und die Grün-
+ []
+
+[1
+
+] (./Facharbeit.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
  (d:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 105.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
  (d:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-] (./Facharbeit.toc)
+))
 \tf@toc=\write5
 \openout5 = `Facharbeit.toc'.
 
- [2] [3] [4] [5] [6] [7] [8] [9]
-<./bilder/wald.jpg, id=63, 1423.3175pt x 807.015pt>
-File: ./bilder/wald.jpg Graphic file (type jpg)
-<use ./bilder/wald.jpg>
-Package pdftex.def Info: ./bilder/wald.jpg  used on input line 409.
-(pdftex.def)             Requested size: 341.43306pt x 193.58904pt.
- [10] [11 <./bilder/wald.jpg>] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 471--476
+ [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 442--443
 
  []
 
-[13] (./Facharbeit.aux)
+[15] [16] (./Facharbeit.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1502,18 +1501,18 @@ Package logreq Info: Writing requests to 'Facharbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34022 strings out of 467533
- 687709 string characters out of 5423669
- 1722417 words of memory out of 5000000
- 62433 multiletter control sequences out of 15000+600000
- 652851 words of font info for 103 fonts, out of 8000000 for 9000
+ 33499 strings out of 467533
+ 681523 string characters out of 5423669
+ 1708486 words of memory out of 5000000
+ 61916 multiletter control sequences out of 15000+600000
+ 644364 words of font info for 75 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,14n,108p,11305b,1918s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfso1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1728.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss2488.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx0800.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Facharbeit.pdf (14 pages, 2143083 bytes).
+ 108i,10n,108p,11305b,1946s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1728.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss2488.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on Facharbeit.pdf (17 pages, 280016 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
+ 136 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

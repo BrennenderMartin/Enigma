@@ -19,70 +19,36 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
-    \entry{typo}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=05385d0f38d658109b55fe1aa02482cc}{%
-           family={Bier},
-           familyi={B\bibinitperiod},
-           given={Christoph},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{05385d0f38d658109b55fe1aa02482cc}
-      \strng{fullhash}{05385d0f38d658109b55fe1aa02482cc}
-      \strng{fullhashraw}{05385d0f38d658109b55fe1aa02482cc}
-      \strng{bibnamehash}{05385d0f38d658109b55fe1aa02482cc}
-      \strng{authorbibnamehash}{05385d0f38d658109b55fe1aa02482cc}
-      \strng{authornamehash}{05385d0f38d658109b55fe1aa02482cc}
-      \strng{authorfullhash}{05385d0f38d658109b55fe1aa02482cc}
-      \strng{authorfullhashraw}{05385d0f38d658109b55fe1aa02482cc}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{- Onlineresource, eingesehen am 30.09.2025}
-      \field{title}{typokurz - Einige wichtige typografische Regeln}
-      \field{year}{2008}
-      \verb{urlraw}
-      \verb https://zvisionwelt.wordpress.com/wp-content/uploads/2012/01/typokurz.pdf
-      \endverb
-      \verb{url}
-      \verb https://zvisionwelt.wordpress.com/wp-content/uploads/2012/01/typokurz.pdf
-      \endverb
-    \endentry
-    \entry{referenzname}{book}{}{}
+    \entry{hinsley2001codebreakers}{book}{}{}
       \name{author}{2}{}{%
-        {{hash=30701365ff35d71d636382710e9d1ca7}{%
-           family={Mustermann},
-           familyi={M\bibinitperiod},
-           given={Max},
-           giveni={M\bibinitperiod}}}%
-        {{hash=a5d9504fd7c6840b00e5c92833c0dd36}{%
-           family={Müller},
-           familyi={M\bibinitperiod},
-           given={Uschi},
-           giveni={U\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Stuttgart}%
+        {{hash=f15f25cd28c48f1debbac72ca4dcf9ed}{%
+           family={Hinsley},
+           familyi={H\bibinitperiod},
+           given={Francis\bibnamedelima Harry},
+           giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=d2604939ecec1af7bf75d4c73e9d87e1}{%
+           family={Stripp},
+           familyi={S\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Klimmbimm Verlag}%
+        {Oxford University Press}%
       }
-      \strng{namehash}{ca4c6706d45ba1c05dc2dfe70ed3dc53}
-      \strng{fullhash}{ca4c6706d45ba1c05dc2dfe70ed3dc53}
-      \strng{fullhashraw}{ca4c6706d45ba1c05dc2dfe70ed3dc53}
-      \strng{bibnamehash}{ca4c6706d45ba1c05dc2dfe70ed3dc53}
-      \strng{authorbibnamehash}{ca4c6706d45ba1c05dc2dfe70ed3dc53}
-      \strng{authornamehash}{ca4c6706d45ba1c05dc2dfe70ed3dc53}
-      \strng{authorfullhash}{ca4c6706d45ba1c05dc2dfe70ed3dc53}
-      \strng{authorfullhashraw}{ca4c6706d45ba1c05dc2dfe70ed3dc53}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \strng{namehash}{7beebf94576a283e1ed845b508da2af4}
+      \strng{fullhash}{7beebf94576a283e1ed845b508da2af4}
+      \strng{fullhashraw}{7beebf94576a283e1ed845b508da2af4}
+      \strng{bibnamehash}{7beebf94576a283e1ed845b508da2af4}
+      \strng{authorbibnamehash}{7beebf94576a283e1ed845b508da2af4}
+      \strng{authornamehash}{7beebf94576a283e1ed845b508da2af4}
+      \strng{authorfullhash}{7beebf94576a283e1ed845b508da2af4}
+      \strng{authorfullhashraw}{7beebf94576a283e1ed845b508da2af4}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{5., vollständig überarbeitete Auflage}
-      \field{title}{Das Leben der Eintagsfliege}
-      \field{year}{2008}
+      \field{title}{Codebreakers: the inside story of Bletchley Park}
+      \field{year}{2001}
     \endentry
     \entry{Patentschrift}{online}{}{}
       \field{sortinit}{P}

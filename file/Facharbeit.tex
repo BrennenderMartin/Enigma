@@ -85,10 +85,10 @@
 {\huge \textsf{Die Enigmaverschlüsselung\,-\,Woran sie gescheitert ist}}
 \vskip\baselineskip
 \noindent
-{\Large \textsf{Mattis Jung}}
+{\Large \textsf{Mattis Jung, 2025/26 \\ Informatik, Herr Linden}}
 \vskip\baselineskip
 \noindent
-\textsf{\today}
+\textsf{6 Wochen, bis \today}
 \end{titlepage}
 
 \restoregeometry % restores the geometry
@@ -101,22 +101,30 @@
 
 
 \begin{abstract}
-Dies ist ein kleiner Wegweiser für das Schreiben einer Facharbeit. Der 
-Schwerpunkt liegt hier auf der Verwendung von \LaTeX{}.
-
-Am einfachsten ist es vermutlich, dieses Dokument als PDF anzuschauen 
-und nebenbei im Quelltext nachzuschauen, wie dies und das umgesetzt wurde. 
-Parallel dazu füllt man sein eigenes Dokument (\emph{Facharbeit.tex}).
+  Diese Facharbeit untersucht die Enigma-Verschlüsselung und die Gründe für ihr Scheitern im Zweiten Weltkrieg.
+  Zunächst werden Aufbau und Funktionsweise der elektromechanischen Chiffriermaschine erläutert, bevor die konstruktiven und operativen Schwächen analysiert werden, die den Alliierten die Entschlüsselung ermöglichten.
+  Im praktischen Teil wird eine eigene Enigma-Implementierung in Python vorgestellt und einer Fehleranalyse unterzogen.
+  Abschließend wird diskutiert, wie eine hypothetische \enquote{perfekte Enigma} die identifizierten Schwachstellen hätte beheben können.
 \end{abstract}
 
 
 % Hier wird automatisch das Inhaltsverzeichnis generiert
 \newpage
-\thispagestyle{empty}
 \tableofcontents 
 \newpage
 
 \section{Einleitung}
+  Im Zweiten Weltkrieg war die sichere Übermittlung von Nachrichten kriegsentscheidend.
+  Die deutsche Wehrmacht setzte dafür die Enigma ein --- eine elektromechanische Chiffriermaschine, die als unknackbar galt.
+  Doch trotz ihres enormen theoretischen Schlüsselraums gelang es den Alliierten, die Enigma zu brechen.
+  Dies lag nicht an einem einzelnen Fehler, sondern an einem Zusammenspiel aus konstruktiven Schwächen, fragwürdigen operativen Vorschriften und menschlichem Fehlverhalten.
+
+  Diese Facharbeit untersucht die Frage, woran die Enigmaverschlüsselung gescheitert ist.
+  Dazu wird zunächst die Funktionsweise der Maschine erläutert: ihr Aufbau mit Steckerbrett, Walzen, Umkehrwalze und Ringstellung (Abschnitt~2).
+  Anschließend werden die Schwächen analysiert, die den Kryptoanalytikern in Bletchley Park die Entschlüsselung ermöglichten --- von der Fixpunktfreiheit über die feste Verkabelung bis hin zu operativen Mängeln (Abschnitt~3).
+  Im praktischen Teil wird eine eigene Enigma\,-\,Implementierung in Python vorgestellt, deren Aufbau, Funktionsweise und Fehler beschrieben werden (Abschnitt~4).
+  Abschließend wird diskutiert, wie eine \enquote{perfekte Enigma} hätte aussehen können, die die identifizierten Schwachstellen behebt (Abschnitt~5).
+
 
 
 \section{Die Enigma}
@@ -165,314 +173,273 @@ Parallel dazu füllt man sein eigenes Dokument (\emph{Facharbeit.tex}).
       Aber auch in Deutschland gab es Enigma\,-\,Varianten mit mehreren Übertragungskerben, wie die Abwehr\,-\,Enigma (G), die bis zu 17 Übert ragungskerben hatte.
 
 
+
 \section{Die Schwächen der Enigma}
   Durch verschiedene Regulierungen wurde die Enigma nicht kryptografisch gestärkt, sondern in entscheidenden Punkten sogar geschwächt.
+  Diese Schwächen ergaben sich sowohl aus dem mechanischen Aufbau der Maschine als auch aus den operativen Vorschriften, die den täglichen Gebrauch regelten.
+  Im Folgenden werden die wesentlichen Schwachstellen erläutert, die den Alliierten die Entschlüsselung ermöglichten.
 
-    Die Umkehrwalze funktioniert nicht so wie die anderen Walzen, da sie nur eine Kontaktplatte hat, auf welcher die Kontakte miteinander verkabelt ist. 
-    Das führt dazu, dass wenn man ein \emph{B} eintippt und ein \emph{K} aufleuchtet, auch beim eintippen vom \emph{K} das \emph{B} aufleuchtet.
+  \subsection{Die Umkehrwalze}
+  Die Umkehrwalze funktioniert nicht so wie die anderen Walzen, da sie nur eine Kontaktplatte hat, auf welcher die Kontakte miteinander verkabelt sind. 
+  Das führt dazu, dass wenn man ein \emph{B} eintippt und ein \emph{K} aufleuchtet, auch beim Eintippen vom \emph{K} das \emph{B} aufleuchtet.
+  Diese Eigenschaft wird als \emph{Involution} bezeichnet: Die Umkehrwalze erzeugt eine Abbildung, die ihre eigene Umkehrfunktion ist.
+  Kryptografisch bedeutet dies, dass Ver\,- und Entschlüsselung mit denselben Einstellungen ablaufen können --- ein operativer Vorteil, der jedoch zugleich die Sicherheit der Maschine erheblich minderte.
+  Da die Umkehrwalze jeden Buchstaben stets in einen \emph{anderen} Buchstaben überführt, kann ein Buchstabe niemals in sich selbst verschlüsselt werden (siehe auch Abschnitt~\ref{sec:fixpunktfreiheit}).
+  Diese Fixpunktfreiheit war eine der gravierendsten Schwächen der Enigma.
 
-  \subsection{Steckerbrett Bedingungen}
-    Das Steckerbrett vertauscht Buchstaben, die miteinander gesteckert sind. 
-    Dabei durften aber nur 20 von den 26 Buchstaben gesteckert sein.
-    Die restlichen sechs blieben ungesteckert.
+  Die meisten Umkehrwalzen besaßen zudem eine feste Verkabelung, die nicht verändert werden konnte.
+  Eine Ausnahme bildete die \emph{UKW\,-\,D} (im alliierten Jargon \emph{Uncle Dick} genannt), bei der die Verdrahtung vom Bediener selbst festgelegt werden konnte.
+  Allerdings wurde diese variable Umkehrwalze erst spät eingeführt und kam nur in begrenztem Umfang zum Einsatz, sodass die meisten Enigma\,-\,Modelle weiterhin mit einer festen, den Alliierten bekannten Umkehrwalze arbeiteten.
 
-  \subsection{Weitere Bedingungen}
+  \subsection{Feste Verkabelung der Walzen}
+  Die Verdrahtung der Rotoren war seit den 1930er Jahren festgelegt und blieb über den gesamten Kriegsverlauf unverändert.
+  Da die Wehrmacht die Walzensätze nicht regelmäßig austauschte, konnten die Alliierten die innere Verkabelung nach und nach rekonstruieren.
+  Dabei halfen unter anderem erbeutete Walzensätze sowie mathematische Analysen aufgefangener Funksprüche.
+  Sobald die Verdrahtung einer Walze bekannt war, blieb sie dauerhaft kompromittiert, weil sie nicht geändert werden konnte.
+  Nach Kerckhoffs' Prinzip hätte die Sicherheit der Enigma nicht von der Geheimhaltung der Walzenverdrahtung abhängen dürfen, sondern ausschließlich vom Schlüssel --- doch in der Praxis stellte das Wissen um die Verdrahtung den Alliierten eine entscheidende Grundlage für ihre Angriffe bereit.
 
+  \subsection{Kerbenmechanik}
+  Da es in den meisten Enigma\,-\,Walzen nur eine einzige Übertragskerbe gab --- eine Ausnahme bildete die Abwehr\,-\,Enigma (G), die bis zu 17 Kerben besaß --- drehten sich die mittlere und die linke Walze nur selten weiter.
+  In der Praxis bedeutete dies, dass die rechte Walze nach jedem Tastendruck rotierte, die mittlere Walze jedoch nur bei jedem 26.\,Tastendruck und die linke Walze nur bei jedem $26 \times 26 = 676$.\,Tastendruck.
+  Dadurch blieb die linke Walze während einer typischen Nachricht (selten länger als einige hundert Zeichen) oft in derselben Position stehen.
+  Dies reduzierte den effektiven Schlüsselraum und erlaubte es den Kryptoanalytikern in Bletchley Park, die Walzenstellungen mit deutlich weniger Aufwand einzugrenzen, als es bei gleichmäßiger Rotation aller drei Walzen der Fall gewesen wäre.
+  Die wenigen Enigma\,-\,Varianten mit mehreren Kerben (wie die bereits erwähnte Abwehr\,-\,Enigma oder die \emph{Enigma\,-\,T} für den Funkverkehr nach Japan) waren aus genau diesem Grund kryptografisch stärker.
+
+  \subsection{Das Steckerbrett}
+  Das Steckerbrett vertauscht Buchstaben, die miteinander gesteckert sind. 
+  Dabei durften aber nur 20 von den 26 Buchstaben gesteckert sein.
+  Die restlichen sechs blieben ungesteckert.\cite[S.108]{hinsley2001codebreakers}
+  Theoretisch hätte eine vollständige Steckerung aller 26 Buchstaben die Anzahl der möglichen Kombinationen weiter erhöht und den Angriff erschwert.
+  Da jedoch sechs Buchstaben stets unverändert durch das Steckerbrett hindurchgingen, blieben diese als Klartext\,-\,Fragmente erhalten, was den Kryptoanalytikern wertvolle Anhaltspunkte lieferte.
+
+  Für die Alliierten und die \emph{Codebreaker} in Bletchley Park war dies eine enorme Hilfe, da sie mit der \emph{Bombe} (einem elektromechanischen Entschlüsselungsgerät) einige mögliche Schlüsselkombinationen sofort ausschließen konnten.\cite[S.107]{hinsley2001codebreakers}
+  Die Bombe, maßgeblich von Alan Turing und Gordon Welchman entwickelt, nutzte bekannte oder vermutete Klartextfragmente (\emph{Cribs}), um systematisch Walzenstellungen durchzuprobieren.
+  Die ungesteckerten Buchstaben erleichterten dabei das Auffinden solcher Cribs erheblich.
+
+  Darüber hinaus galt die Vorschrift, dass zwei im Alphabet direkt aufeinanderfolgende Buchstaben nicht miteinander gesteckert werden durften.
+  Diese Regel schränkte die möglichen Steckerkombinationen zusätzlich ein und verringerte die Sicherheit, anstatt sie zu verbessern.
+
+  \subsection{Fixpunktfreiheit}\label{sec:fixpunktfreiheit}
+  Ein Buchstabe kann bei der Enigma niemals in sich selbst verschlüsselt werden.
+  Diese Eigenschaft --- die Fixpunktfreiheit --- resultiert direkt aus der Konstruktion der Umkehrwalze.
+  Für die Kryptoanalytiker war sie ein mächtiges Werkzeug:
+  Wenn ein vermutetes Klartextwort an einer bestimmten Stelle im Chiffretext den gleichen Buchstaben an der gleichen Position aufwies, konnte diese Hypothese sofort verworfen werden.
+  So ließ sich beispielsweise das häufig verwendete Wort \emph{WETTERBERICHT} an zahlreichen Positionen ausschließen, was die Suche nach der richtigen Zuordnung drastisch beschleunigte.
+  Die Bombe nutzte diese Eigenschaft systematisch aus, um den Suchraum erheblich zu reduzieren.
+
+  \subsection{Operative Schwächen}
   Zudem gab es für jeden Monat eine Schlüsseltafel, auf der Walzenlage, Ringstellung, Steckerverbindungen und Kenngruppen für jeden Tag festgelegt waren.
   Diese Tafeln durften nicht an Bord von Flugzeugen mitgenommen werden, da sie sonst leichter in die Hände der Alliierten fallen konnten.
+  Dennoch gelang es den Alliierten wiederholt, solche Schlüsseltafeln zu erbeuten --- beispielsweise aus versenkten U\,-\,Booten oder abgeschossenen Flugzeugen.
+  In Kombination mit den aufgefangenen Funksprüchen ermöglichten diese erbeuteten Unterlagen den Codeknackern in Bletchley Park, die Enigma\,-\,Einstellungen zu rekonstruieren und die Entschlüsselung zu beschleunigen.
+
+  Auch menschliches Fehlverhalten schwächte die Enigma.
+  Funker verwendeten \\ manchmal vorhersagbare Spruchschlüssel (z.\,B. \emph{AAA} oder die drei auf der Tastatur nebeneinanderliegenden Buchstaben \emph{QWE}), was den Alliierten das Erraten erleichterte.
+  Darüber hinaus begannen viele Nachrichten mit stereotypen Floskeln wie \emph{AN DIE GRUPPE} oder enthielten regelmäßig wiederkehrende Wetterberichte.
+  Solche bekannten Klartextfragmente (\emph{Cribs}) waren für die Kryptoanalyse von unschätzbarem Wert und bildeten oft den Ausgangspunkt für einen erfolgreichen Angriff auf den Tagesschlüssel.
 
 
-\section{Meine Enigma Implementierung}
+
+\section{Die Enigma Implementierung}
+
+  \subsection{Wie ist die Implementation geplant}
+    Der Plan der Implementation war, die Konfiguration der Enigma von ihrer Logik zu trennen.
+    Dazu wurden mehrere JSON\,-\,Dateien erstellt, in denen die wichtigsten Informationen zur Initialisierung der Maschine gespeichert sind:
+    Eine \emph{vorlage.json} enthält die Tageseinstellungen (Walzenlage, Ringstellung, Steckerverbindungen und Kenngruppen), während die \emph{rotors.json} alle verfügbaren Walzen mit ihrer Verdrahtung, ihren Kerben und ihrem Einführungsdatum auflistet.
+
+    Diese Herangehensweise orientiert sich an den historischen Schlüsseltafeln der Wehrmacht:
+    Genau wie dort legt die Vorlage fest, welche Walzen in welcher Reihenfolge eingesetzt werden und welche Buchstaben auf dem Steckerbrett miteinander verbunden sind.
+    Bei der Umsetzung wurde sich jedoch zu stark auf das korrekte Einlesen und Verarbeiten dieser Daten fokussiert und die eigentliche Verschlüsselungslogik vernachlässigt.
+    Dies fiel letztlich in den Rücken, da die Funktion der eigentlichen Maschine nie vollständig fertiggestellt wurde --- die Gründe dafür werden in Abschnitt~\ref{sec:fehleranalyse} beschrieben.
 
   \subsection{Wie funktioniert diese Implementierung?}
-    In meiner Version der Enigma arbeiten zwei Klassen zusammen, um eine eingegebene Nachricht zu verschlüsseln.
-    Die größere Klasse ist die Enigma\,-\,Klasse: Dort liegt die zentrale Logik.
-    Beim Start der Verschlüsselung erzeugt sie die benötigten Walzen; in diesen findet die eigentliche Buchstaben\,-\,Ersetzung statt.
+    In dieser Version der Enigma arbeiten zwei Klassen zusammen, um eine eingegebene Nachricht zu verschlüsseln:
+    die \emph{Enigma}\,-\,Klasse und die \emph{Walze}\,-\,Klasse.
+    Die Enigma\,-\,Klasse enthält die zentrale Steuerungslogik.
+    Beim Start der Verschlüsselung erzeugt sie die benötigten Walzen\,-\,Objekte; in diesen findet die eigentliche Buchstaben\,-\,Ersetzung statt.
     Das Steckerbrett ist ebenfalls Teil der Enigma\,-\,Klasse und vertauscht gesteckerte Buchstaben sowohl vor als auch nach dem Durchlaufen der Rotoren.
 
-    \subsubsection{Die Enigma} 
-      Die Klasse Enigma wird mit folgenden Parametern initialisiert und ist wie folgt aufgebaut:
+    \subsubsection{Die Enigma\,-\,Klasse} 
+      Die Klasse \emph{Enigma} wird mit drei Parametern initialisiert:
       
       \textbf{Parameter: }
 
       \emph{name\,(str)}: Name der Enigma, bestehend aus \emph{Enigma} und der Modellbezeichnung (z.\,B. \emph{I}), getrennt durch ein \emph{-}.
-      Dient zur Identifizierung der Art der Enigma (\emph{Enigma\,-\,I, Enigma\,-\,M3, Enigma\,-\,G}, etc.).
+      Dient zur Identifizierung des Maschinentyps (\emph{Enigma\,-\,I, Enigma\,-\,M3, Enigma\,-\,G}, etc.).
+      Intern wird der Name am Bindestrich aufgetrennt, um den Modelltyp zu bestimmen, der wiederum festlegt, welche Walzen aus der \emph{rotors.json} geladen werden dürfen.
 
       \emph{vorlage\,(dict)}: Dictionary, das alle wichtigen Informationen zu Walzenlage, Ringstellung, Steckerverbindungen und Kenngruppen enthält.
-      Die Walzenlage ist eine Liste von Strings, die die jeweiligen Walzen spezifizieren.
-      Die Ringstellung ist eine Liste von Zahlen, die den Rotationsversatz zwischen der inneren Verdrahtung der Walzen und den außen sichtbaren Buchstaben bzw. Zahlen angibt.
-      Die Steckerverbindung ist eine zehn Elemente lange Liste aus Strings mit je zwei Zeichen. Sie legt fest, welche Buchstaben miteinander gesteckert sind; dadurch bleiben sechs Buchstaben des Alphabets ungesteckert.
-      Die Kenngruppen sind eine Liste von Strings, die mögliche Kenngruppen für den jeweiligen Tag angeben. Davon müssen drei in die zu verschlüsselnde Nachricht eingebaut werden, indem man sie permutiert und mit zwei Füllbuchstaben unverschlüsselt voranstellt.
+      Die Walzenlage ist eine Liste von Strings, die die jeweiligen Walzen spezifizieren (z.\,B. \texttt{[\enquote{I},\,\enquote{IV},\,\enquote{III},\,\\\enquote{B}]}, wobei das letzte Element die Umkehrwalze bestimmt).
+      Die Ringstellung ist eine Liste von Zahlen, die den Rotationsversatz zwischen der inneren Verdrahtung der Walzen und den außen sichtbaren Buchstaben angibt.
+      Die Steckerverbindung ist eine zehn Elemente lange Liste aus Strings mit je zwei Zeichen (z.\,B. \texttt{[\enquote{CV},\,\enquote{WK},\,...]}). Sie legt fest, welche Buchstaben miteinander gesteckert sind; dadurch bleiben sechs Buchstaben des Alphabets ungesteckert.
+      Die Kenngruppen sind eine Liste von Strings, die mögliche Kenngruppen für den jeweiligen Tag angeben.
 
-      \emph{startingPosition\,(str)}: Ein String aus drei Zeichen, der die Grundstellung der Walzen festlegt.
-      Das erste Zeichen steht für die schnellste Walze (ganz rechts), das zweite für die mittlere Walze und das dritte für die langsamste Walze (ganz links).
-      Beim Initialisieren wird dieser String in eine Liste mit den jeweiligen Zahlenwerten der Buchstaben umgewandelt.
+      \emph{startingPosition\,(str)}: Ein String aus drei Zeichen (z.\,B. \texttt{\enquote{QWE}}), der die Grundstellung der Walzen festlegt.
+      Beim Initialisieren wird jeder Buchstabe über \\ \texttt{string.ascii\_uppercase.index() } in seinen Zahlenwert umgewandelt und als Liste gespeichert.
 
       \textbf{Funktionen:}
 
-      \emph{encode}: Verschlüsselt den eingegebenen Text.
+      \emph{encode(text)}: Die zentrale Verschlüsselungsfunktion. Sie ruft nacheinander das Steckerbrett, die Rotoren und erneut das Steckerbrett auf und gibt den verschlüsselten Text in 5er\,-\,Gruppen formatiert zurück.
+      Der Ablauf entspricht dem historischen Signalweg: Tastatur $\rightarrow$ Steckerbrett $\rightarrow$ Walzen $\rightarrow$ Umkehrwalze $\rightarrow$ Walzen (rückwärts) $\rightarrow$ Steckerbrett $\rightarrow$ Lampenfeld.
 
-      \emph{getEnigmaString}: Formatiert den Ausgabetext (z.\,B. in 5er\,-\,Gruppen).
+      \emph{getFiveCharString(text)}: Nimmt den zusammenhängenden Chiffretext und teilt ihn in Fünfergruppen auf, getrennt durch Leerzeichen --- so wie es bei der historischen Funkübertragung üblich war.
 
-      \emph{stecker}: Wendet eine einzelne Stecker\,-\,Vertauschung an.
+      \emph{steckerSwitch(inputChar)}: Prüft für einen einzelnen Buchstaben, ob er in der Steckerverbindungsliste vorkommt. Falls ja, wird er durch seinen Partner ersetzt; falls nein, bleibt er unverändert.
+      Die Funktion iteriert dazu über alle zehn Steckerpaare und vergleicht den Eingabebuchstaben mit beiden Zeichen jedes Paares.
 
-      \emph{steckerbrett}: Wendet das Steckerbrett auf einen gesamten Text an.
+      \emph{steckerLoop(text)}: Wendet \emph{steckerSwitch} auf jeden Buchstaben eines gesamten Textes an. Vorher werden Leerzeichen entfernt und alle Buchstaben in Großbuchstaben umgewandelt.
 
-      \emph{rotors}: Führt den Lauf durch die Rotoren aus.
+      \emph{rotors(text)}: Führt die eigentliche Walzenverschlüsselung durch.
+      Zunächst werden die Walzen über \emph{getRotors} geladen. Dann wird für jeden Buchstaben der Nachricht der Signalweg durch die Walzen simuliert.
+      Die Durchlaufreihenfolge ist als Liste \texttt{[0,\,2,\,3,\,4,\,1,\,4,\,3,\,2,\,0]} definiert, wobei Index~0 die Eintrittswalze (ETW), Index~1 die Umkehrwalze (UKW) und die Indizes 2--4 die drei Rotoren darstellen.
+      Das Signal durchläuft also: ETW $\rightarrow$ Rotor\,1 $\rightarrow$ Rotor\,2 $\rightarrow$ Rotor\,3 $\rightarrow$ UKW $\rightarrow$ Rotor\,3 $\rightarrow$ Rotor\,2 $\rightarrow$ Rotor\,1 $\rightarrow$ ETW.
+      Nach jedem verschlüsselten Buchstaben wird \emph{rotate} aufgerufen.
 
-      \emph{rotate}: Rotiert die Walzen gemäß Kerben\,-\,Mechanik.
+      \emph{rotate()}: Implementiert die Kerbenmechanik. Die rechte Walze (Index~2) rotiert bei jedem Tastendruck. Gibt ihre \emph{rotate}\,-\,Methode \emph{True} zurück (d.\,h. sie hat ihre Kerbe erreicht), wird auch die mittlere Walze (Index~3) weitergedreht, und so fort.
 
-      \emph{findRotors}: Lädt und erzeugt die benötigten Walzen.
+      \emph{getRotors(referencePath, startingPositions)}: Lädt die Datei \emph{rotors.json} und erzeugt die benötigten Walzen\,-\,Objekte.
+      Für Enigma\,-\,Modelle vom Typ \emph{I}, \emph{M3} oder \emph{M4} werden ETW, UKW und die drei (bzw. vier) Rotoren aus der JSON\,-\,Datei gesucht und als \emph{Walze}\,-\,Objekte instanziiert.
+      Die Startpositionen aus der Grundstellung werden dabei an die jeweiligen Rotoren übergeben.
 
-    \subsubsection{Die Walze}
-      Die Klasse Walze wird mit folgenden Parametern initialisiert und ist entsprechend aufgebaut:
+
+    \subsubsection{Die Walze\,-\,Klasse}
+      Die Klasse \emph{Walze} repräsentiert eine einzelne Walze (Rotor, Eintrittswalze oder Umkehrwalze) und wird mit folgenden Parametern initialisiert:
+
+      \textbf{Parameter:}
+
+      \emph{source\,(dict)}: Ein Dictionary aus der \emph{rotors.json} mit den Schlüsseln \texttt{walze} (Name, z.\,B. \texttt{\enquote{III}}), \texttt{wiring} (Verdrahtung als 26\,-\,Zeichen\,-\,String), optional \texttt{kerbe} (Kerbenbuchstabe) und \texttt{modell} (Liste kompatibler Enigma\,-\,Modelle).
+      
+      \emph{start\,(int)\,=\,0}: Die Startposition der Walze als ganzzahliger Wert (0--25), welcher der Grundstellung entspricht. Standardmäßig steht die Walze auf Position~0 (Buchstabe \emph{A}).
+
+      \textbf{Attribute:}
+
+      \emph{walzenart\,(str)}: Der Name der Walze (z.\,B. \texttt{\enquote{III}}, \texttt{\enquote{UKW B}} oder \texttt{\enquote{ETW}}).
+
+      \emph{wiring\,(str)}: Die Verdrahtung als 26\,-\,Zeichen\,-\,String, der angibt, welcher Buchstabe auf welchen abgebildet wird.
+
+      \emph{encoding\,(list[int])}: Eine aus dem \emph{wiring}\,-\,String berechnete Liste von 26 ganzzahligen Verschiebungswerten. Für jede Position~$i$ wird die Differenz zwischen dem Zielindex und~$i$ gespeichert.
+      Dadurch kann die Verschlüsselung eines Buchstabens als einfache Addition und Modulooperation durchgeführt werden, anstatt den Buchstaben im String zu suchen.
+
+      \emph{kerbe}: Der Kerbenbuchstabe (als Zahlenwert) bei normalen Rotoren, \emph{None} bei ETW und UKW.
+
+      \emph{rotierbar\,(bool)}: Gibt an, ob sich die Walze drehen kann. ETW und UKW sind nicht rotierbar.
+
+      \emph{position\,(int)}: Die aktuelle Position der Walze.
+
+      \textbf{Funktionen:}
+
+      \emph{getEncoding()}: Berechnet die \emph{encoding}\,-\,Liste aus dem \emph{wiring}\,-\,String. Für jeden Buchstaben an Position~$i$ im Wiring wird die Verschiebung $\text{Index des Buchstabens} - i$ berechnet.
+
+      \emph{rotate()}: Erhöht die Position um~1 (modulo~26). Gibt \emph{True} zurück, wenn die Walze nach der Rotation ihre Kerbe erreicht hat --- das Signal für die nächste Walze, ebenfalls zu rotieren.
+
+      \emph{run(item)}: Führt die Verschlüsselung eines einzelnen Buchstabens (als Ganzzahl 0--25) durch. Die Berechnung lautet:
+      \begin{align*}
+        \text{retItem} = (\text{item} + \text{encoding}[(\text{item} + \text{position}) \bmod 26]) \bmod 26
+      \end{align*}
+      Die aktuelle Position der Walze wird dabei berücksichtigt, sodass die Verschlüsselung von der Walzenstellung abhängt.
+
+
+  \subsection{Was ist das Problem dieser Implementation?}\label{sec:fehleranalyse}
+    Das grundlegende Ziel der Enigma\,-\,Implementierung ist es, Nachrichten zu verschlüsseln, sodass sie ohne den korrekten Schlüssel nicht lesbar sind.
+    Da man einen bestimmten Schlüssel (Walzenlage, Grundstellung, Ringstellung, Steckerverbindungen) benötigt, ist die Verifikation schwierig:
+    Es ist nicht ohne Weiteres erkennbar, ob ein verschlüsselter Text das korrekte Ergebnis darstellt oder nur zufällig aussehenden Buchstabensalat --- beides sieht auf den ersten Blick gleich aus.
+    Im Folgenden werden die identifizierten Fehler und Probleme dieser Implementation analysiert.
+
+    \subsubsection{Fehlende Ringstellung}
+      Die Ringstellung wird zwar aus der \emph{vorlage.json} geladen und im Attribut \\ \texttt{self.ringstellung} gespeichert, jedoch nirgendwo in der Verschlüsselungslogik verwendet.
+      Bei der historischen Enigma verschiebt die Ringstellung die Zuordnung zwischen den äußeren Buchstabenringen und der inneren Verdrahtung.
+      Ohne Berücksichtigung der Ringstellung produziert die Implementierung falsche Ergebnisse, selbst wenn alle anderen Einstellungen korrekt sind.
+      Die Ringstellung hätte in der Klasse \emph{Walze} beim Initialisieren als zusätzlicher Versatz in die \emph{encoding}\,-\,Berechnung oder in die \emph{run}\,-\,Methode einfließen müssen.
+
+    \subsubsection{Fehlender Rückwärtslauf durch die Walzen}
+      In der historischen Enigma durchläuft das Signal die Walzen auf dem Hinweg in die eine Richtung und auf dem Rückweg (nach der Umkehrwalze) in die entgegengesetzte Richtung.
+      Diese Implementierung verwendet jedoch dieselbe \emph{run}\,-\,Methode für beide Richtungen.
+      Die \emph{encoding}\,-\,Liste bildet nur den Vorwärtslauf ab, d.\,h. für jeden Eingangskontakt wird der Ausgangskontakt berechnet.
+      Für den Rückweg müsste die inverse Abbildung verwendet werden: gegeben der Ausgangskontakt, welcher Eingangskontakt gehört dazu?
+      Da dies nicht implementiert ist, ist der Rückweg durch die Walzen fehlerhaft und die Verschlüsselung insgesamt inkorrekt.
+
+    \subsubsection{Startposition und Kerbenlogik}
+      Die Startpositionen werden als Liste \texttt{[0,\,1,\,2]} an \emph{getRotors} übergeben und den Rotoren über den Index der \emph{walzenlage}\,-\,Liste zugeordnet.
+      Allerdings enthält \emph{walzenlage} auch die Bezeichnung der Umkehrwalze als letztes Element.
+      Die Startpositionen beziehen sich jedoch nur auf die drei Rotoren, nicht auf die Umkehrwalze.
+      Dadurch kann es zu einer Indexverschiebung kommen.
+
+      Zudem prüft die \emph{rotate}\,-\,Methode, ob die Position gleich der Kerbe ist \\(\texttt{self.position == self.kerbe}). Die Rotation findet jedoch \emph{vor} dem Vergleich statt.
+      Bei der historischen Enigma existiert außerdem der sogenannte \emph{Double\,-\,\\Stepping}\,-\,Mechanismus: Wenn die mittlere Walze ihre Kerbe erreicht, wird sie beim nächsten Tastendruck \emph{erneut} weitergedreht, zusammen mit der linken Walze.
+      Dieser Mechanismus ist in dieser Implementierung nicht berücksichtigt.
+
+    \subsubsection{Fehlende Verifikationsmöglichkeit}
+      Da die Verschlüsselung aufgrund der oben genannten Fehler keine korrekten Ergebnisse liefert, fehlt auch eine Möglichkeit, die Ergebnisse zu verifizieren.
+      Eine korrekt implementierte Enigma muss die Eigenschaft besitzen, dass eine Nachricht, die mit denselben Einstellungen zweimal verschlüsselt wird, wieder den ursprünglichen Klartext ergibt (da die Enigma eine Involution ist).
+      Diese Eigenschaft hätte als grundlegender Test verwendet werden können: wenn \texttt{encode(encode(text)) == text}, ist die Implementation zumindest in sich konsistent.
+      Da dies bei dieser Implementierung nicht der Fall ist, wurde deutlich, dass fundamentale Fehler in der Verschlüsselungslogik vorhanden sind.
+
 
 
 \section{Die perfekte Enigma}
-
+  Die Analyse der Schwächen der historischen Enigma wirft eine naheliegende Frage auf:
+  Wie hätte eine Enigma aussehen müssen, die mit den damals verfügbaren Mitteln nicht zu knacken gewesen wäre?
+  In diesem Abschnitt wird ein hypothetisches Redesign der Enigma skizziert, das die in Abschnitt~3 beschriebenen Schwachstellen systematisch behebt.
 
   \subsection{Was ist anders an dieser Enigma?}
+    Die \enquote{perfekte Enigma} unterscheidet sich in mehreren entscheidenden Punkten von der historischen Maschine:
+
+    \subsubsection{Eine verbesserte Umkehrwalze}
+      Die gravierendste Schwäche der historischen Enigma --- die Fixpunktfreiheit --- ließe sich durch eine Umkehrwalze beseitigen, die auch Fixpunkte zulässt, d.\,h. einen Buchstaben auf sich selbst abbilden kann.
+      Alternativ könnte die Umkehrwalze ganz entfallen und durch eine vierte (oder fünfte) reguläre Walze ersetzt werden.
+      Dies würde allerdings bedeuten, dass Verschlüsselung und Entschlüsselung nicht mehr mit denselben Einstellungen ablaufen können --- eine Einschränkung, die aus operativer Sicht nachteilig wäre, die Sicherheit jedoch erheblich steigern würde.
+      Ein Mittelweg wäre die konsequente Verwendung der variablen Umkehrwalze \emph{UKW\,-\,D}, deren Verdrahtung täglich gewechselt wird.
+      Allein dadurch würde der Schlüsselraum um einen signifikanten Faktor wachsen.
+
+    \subsubsection{Mehr Kerben und Double\,-\,Stepping}
+      Die perfekte Enigma würde Walzen mit mehreren, ungleichmäßig verteilten Kerben verwenden --- ähnlich der Abwehr\,-\,Enigma mit ihren bis zu 17 Kerben.
+      Dadurch würden sich alle Walzen deutlich häufiger drehen und die effektive Periodenlänge der Verschlüsselung erheblich verlängern.
+      Die linke Walze, die bei der historischen Enigma oft während einer gesamten Nachricht in derselben Position blieb, würde nun regelmäßig weiterschalten.
+      Dies würde die Kryptoanalyse erschweren, da die Walzenstellungen nicht mehr so leicht eingegrenzt werden könnten.
+
+    \subsubsection{Austauschbare Verdrahtung}
+      Anstelle einer festen, werksseitig eingebauten Verdrahtung sollten die Walzen eine austauschbare oder vom Bediener konfigurierbare Verdrahtung besitzen.
+      In der Praxis wäre dies durch herausnehmbare Verdrahtungseinsätze realisierbar, die regelmäßig gewechselt werden.
+      Selbst wenn dem Gegner einzelne Einsätze in die Hände fielen, wären nur die Nachrichten des jeweiligen Zeitraums kompromittiert --- nicht der gesamte vergangene und zukünftige Funkverkehr.
+
+    \subsubsection{Volles Steckerbrett ohne Einschränkungen}
+      Die perfekte Enigma würde alle 26 Buchstaben auf dem Steckerbrett steckern, sodass kein Buchstabe unverändert hindurchgeht.
+      Darüber hinaus würde die Regel entfallen, dass aufeinanderfolgende Buchstaben nicht miteinander gesteckert werden dürfen.
+      Beide Einschränkungen verringerten den Schlüsselraum unnötig und lieferten den Kryptoanalytikern wertvolle Informationen.
+
+    \subsubsection{Operative Verbesserungen}
+      Neben den mechanischen Änderungen wären auch operative Maßnahmen entscheidend.
+      Spruchschlüssel sollten nicht vom Funker frei gewählt, sondern durch ein Zufallsverfahren erzeugt werden, um vorhersagbare Schlüssel wie \emph{AAA} oder \emph{QWE} auszuschließen.
+      Standardfloskeln am Anfang und Ende von Nachrichten --- wie \emph{AN DIE GRUPPE} oder \emph{WETTERBERICHT} --- müssten verboten oder zumindest systematisch variiert werden, um den Alliierten keine Cribs zu liefern.
+      Außerdem sollte die maximale Nachrichtenlänge strikt begrenzt werden, um die Menge an Chiffretext zu reduzieren, die mit demselben Schlüssel erzeugt wird.
+
+\newpage
 
 
 
 \section{Fazit}
+  Die Enigma war für ihre Zeit eine bemerkenswert komplexe Chiffriermaschine.
+  Mit ihren austauschbaren Walzen, dem Steckerbrett und der sich bei jedem Tastendruck ändernden Verschlüsselung bot sie einen theoretischen Schlüsselraum, der mit den damaligen Mitteln kaum vollständig durchsuchbar schien.
+  Dennoch wurde sie geknackt --- nicht weil die Grundidee fehlerhaft war, sondern weil eine Kombination aus konstruktiven Entscheidungen, operativen Vorschriften und menschlichem Fehlverhalten die Sicherheit systematisch untergrub.
 
-\newpage
+  Die Fixpunktfreiheit, die feste Verkabelung, die unzureichende Kerbenmechanik und die unvollständige Steckerung boten den Kryptoanalytikern in Bletchley Park Angriffsflächen, die sich mit der \emph{Bombe} effizient ausnutzen ließen.
+  Hinzu kamen operative Schwächen wie vorhersagbare Spruchschlüssel und stereotype Nachrichtenanfänge, die den Alliierten die entscheidenden Cribs lieferten.
 
-% -------- Hier beginnt der eigentliche Inhalt ------------
-\section{Einleitung}
-\epigraph{Das Lernen macht stets dann Verdruß’, wenn man’s nicht will, 
-es aber muss.}{Heinz Erhardt (1909 - 1979)}
+  Die eigene Enigma\,-\,Implementierung hat gezeigt, wie anspruchsvoll selbst eine vereinfachte Nachbildung dieser Maschine ist.
+  Fehlende Ringstellung, ein nicht implementierter Rückwärtslauf durch die Walzen und eine unvollständige Kerbenmechanik führten dazu, dass die Simulation keine korrekten Ergebnisse liefert.
+  Dies verdeutlicht, wie eng die korrekte Verschlüsselung an das präzise Zusammenspiel aller Komponenten gebunden ist.
 
-\section{Ein bißchen zu \LaTeX\ und zur Typographie}
-\subsection{Typographische Feinheiten, die viele nicht kennen...}
-Hier mal der Unterscheid zwischen einem ganzen und einem halben\cite{Patentschrift}
-(richtige Version) Leerzeichen vor Einheiten:\\
-100 m oder auch 100m sehen weniger schön aus, als 100\,m. 
-Ein Eurosymbol erzeugt man durch einen Befehl (siehe Quelltext): 
-\EUR{22}... 
-Gleiches gilt für ein Prozentzeichen \%, was ja eigentlich den Text 
-im Quelltext auskommentieren würde... 
-Bei Abkürzungen kommt ebenfalls das halbe Leerzeichen zur Anwendung.
-Man schreibt z.\,B. (nicht z.B. oder z. B.) 70\,\% statt 70\% oder 
-gar 70 \% (halbes Leerzeichen). Siehe Quelltext.
+  Die Überlegungen zur \enquote{perfekten Enigma} zeigen, dass viele der Schwächen mit vergleichsweise einfachen Maßnahmen hätten behoben werden können:
+  eine variable Umkehrwalze, mehr Kerben, austauschbare Verdrahtungen und strengere operative Vorschriften.
+  Dass diese Maßnahmen nicht umgesetzt wurden, lag oft an der Priorisierung operativer Bequemlichkeit gegenüber kryptografischer Sicherheit.
 
-
-Um etwas wichtiges hervorzuheben, verwendet man übrigens nicht den 
-aufdringlichen (wenn auch leider von vielen verwendeten)
-\textbf{Fettdruck} sondern die dezente \emph{italienische} Variante! 
-Benötigt man mehr, gibt es auch noch: \textsf{etwas ohne Serifen} 
-(gesehen?) oder \texttt{Schreibmaschinenschrift}. Natürlich geht noch 
-viel mehr allerdings sollte man es vermeiden Schriftarten zu mischen, 
-wenn man nicht ganz genau weiß was man tut. Die italienische Variante 
-reicht in der Regel.
-
-Absätze sind am Anfang immer etwas eingerückt und werden im Quelltext 
-durch eine Leerzeile erzeugt. 
-
-Sehr empfehlenswert ist auch die kleine PDF „typokurz\cite{typo}“.
-
-\subsection{Ein paar Beispiele für den Einsatz von \LaTeX}
-\LaTeX, ausgesprochen „Latech“ funktioniert nach dem Prinzip des 
-Textsatzes, Word und andere nach dem Wortsatzverfahren.
-
-Word funktioniert nach dem Prinzip: „What You See Is What You Get“ 
-(WYSIWIG) - das fertige Ergebnis ist von Anfang an auf dem 
-PC-Bildschirm zu erkennen. Die \LaTeX-Community setzt diesem Slogan 
-ihr eigenes Motto entgegen: WYGIWYM steht für „What You Get Is What 
-You Mean“ - Man bekommt das, was man auch wirklich beabsichtigt hat.
-
-\subsubsection{Darstellung Chemie}
-
-$\isotope{Po} --- \isotope[56]{Fe} --- \isotope[13][6]{C}$
-
-$\isotope{n} + \isotope{H} \to \isotope{D} +
-\gamma(2.2\,\mathrm{MeV})$
-
-$\isotope[13][6]{C} + \alpha(5.314\,\mathrm{MeV}) \to
-\isotope[16]{O}^{**} + n$
-
-\subsubsection{Darstellung Mathematik}
-\begin{align}
-\int_0^6 x^2 dx = 72
-\end{align}
-Umgebungen, wie hier die \emph{align}-Umgebung können zusätzlich mit 
-einem Sternchen versehen werden, wie beispielsweise im nächsten Fall, 
-wodurch die Formelnummerierung (auf die übrigens wieder referenziert 
-werden können) ausgeschaltet werden kann. 
-
-Hier werden mehrere Formeln untereinander am Gleichheitszeichen 
-ausgerichtet dargestellt.
-\begin{align*}
-\int_0^6 x^2 dx &= 72 \\ 		% Der doppelte Backslash ist für den Zeilenumbruch zuständig, 
-								% das &-Zeichen, gibt an, woran die Formeln
-f(x)	&= e^{\pi \cdot t} \\	% ausgerichtet werden sollen (hier am =-Zeichen...)
-\vec{x} &= \begin{pmatrix} 2 \\ 3 \\ -4 \end{pmatrix} \\
-A &= \begin{pmatrix} 2 & 3 \\ -4  & 2 \\ 3 & -4 \end{pmatrix}
-\end{align*}
-
-Oder mal 'ne Polynomdivision:
-\begin{center}
-	\polyset{style=C,div=:,vars=x}
-	\polylongdiv{x^4-7x^3+3x-2}{x - 2}
-\end{center}
-
-
-\subsubsection{Darstellung von Quellcode}
-\begin{lstlisting}
-class Fahrzeug{
-    String hersteller;
-    String farbe;
-
-    //--- Konstruktor, initialisiert die Datenfelder
-    Fahrzeug(String derHersteller, String dieFarbe){
-        hersteller = derHersteller;
-        farbe = dieFarbe;
-    }
-
-    //--- Methoden des Fahrzeugs
-    beschleunigen(){
-    
-    }
-    
-    bremsen(){
-    
-    }
-    
-    links(){
-    
-    }
-    
-    rechts(){
-    
-    }
-}
-\end{lstlisting}
-
-
-\subsubsection{Darstellung von Zitaten, Quellen, etc.}
-Der folgende Zitierstil\cite{referenzname} wird unter anderem in 
-der weltbekannten Zeitschrift \emph{nature} verwendet.
-Die Quellen werden numerisch automatisch in der erwähnten Reihenfolge 
-im Literaturverzeichnis gelistet.
-
-In \LaTeX\, lassen sich über \emph{Syle-Vorgaben} auch andere Zitierstile 
-umsetzen, hier gibt es genügend Möglichkeiten für Mediziner, 
-Geisteswissenschaftler oder Juristen. Da muß man möglicherweise etwas
-recherchieren.
-
-\subsubsection{Die Datei \emph{literatur.bib}}
-In der Datei befinden sich letztlich alle Quellen. Dazu werden 
-diese einfach nach einem festgelegten Schema festgehalten und 
-\LaTeX{} erstellt daraus das Literaturverzeichnis (siehe Ende 
-des Dokuments). Der Aufbau ist im Prinzip wie folgt:
-
-Am Besten gleich mal mit dem Literaturverzeichnis vergleichen (in normalem
-Editor öffnen)!
-
-
-\subsubsection{Zitate aus anderen Werken}
-Man kann in einer wissenschaftlichen Arbeit durchaus per 
-„Copy \& Paste“ einen Text übernehmen. Dieser muß dann allerdings 
-mit Angabe der Quelle als Zitat (z.\,B. beidseitig eingerückt) 
-dargestellt werden. 
-
-\begin{quote}
-	Beispiel für ein Zitat (quote). Es gibt aber auch (quotation) 
-	für längere Zitate 	oder sogar (verse) für Verse... Man erkennt 
-	hier die beidseitige Einrückung.
-\end{quote}
-
-\subsubsection{Gedichte in Versform}
-Wie wäre es mit Gedichten?
-\begin{verse}
-	Ein jeder Stier hat oben vorn\\
-	auf jeder Seite je ein Horn;\\
-	doch ist es ihm nicht zuzumuten,\\
-	auf so ’nem Horn auch noch zu tuten.\\
-	Nicht drum, weil er nicht tuten kann,\\
-	nein, er kommt mit dem Maul nicht ’ran!.	
-\end{verse}
-
-\subsubsection{Farbhervorhebungen}
-Texte lassen sich natürlich auch einfärben, das kann 
-z.\,B. bei der Beschreibung von Batterieanschlüssen hilfreich sein: 
-\textcolor{red}{Plus} ... \textcolor{blue}{Minus}.
-
-\subsubsection{Bilder}
-Bilder, Tabellen, etc. werden in der Regel in einer \emph{figure-Umgebung}
-gesetzt. Diese ermöglicht einem beispielsweise auch den Verweis (siehe
-Abb.: \ref{sportplatz}, siehe auch Quelltext!) auf ein Bild im laufenden 
-Text.
-\begin{figure}[hbt!]
-  \centering
-  \includegraphics[width=12cm]{./bilder/wald.jpg}
-  \caption{Satellitenaufnahme der Untersuchungsfläche}
-  \label{sportplatz}
-\end{figure}
-
-\subsubsection{Tabellen}
-
-\begin{table}[hbt!]
-  \centering
-  \begin{tabular}{ll|c|ll}
-    Name  	& Vorname 	& Alter & Geburtstag  	& Geburtsort\\ \hline
-    Katrin	& Lollipop  & 16   	& 1.1.1999		& Velbert	\\
-    Uschi	& Lomboku	& 17	& 1.1.1998		& Essen		\\
-    Pauline	& Fümmli	& 17	& 12.5.1999		& Zürich	\\
-  \end{tabular}
-\end{table}
-
-\subsubsection{Erweiterungen}
-Es gibt für \LaTeX{} wirklich alles Mögliche in Form von Zusatzpaketen, 
-die am Anfang des Dokuments mit dem Befehl \textbackslash usepackage\{...\}
-importiert werden können. Es gibt z.\,B. Pakete für Kochbücher, Puzzle, 
-Kreuzworträtsel, elektronische Schaltsymbole und weiß der Geier was noch.
-
-
-\subsection{Vorbereitungen zum Schreiben einer Facharbeit}
-Während der Orientierungsphase ist es sehr wichtig, sich Notizen zu machen. Jede 
-gesammelte Information sollte in Stichworten festgehalten werden und zwar so, 
-daß sie jederzeit wiedergefunden werden kann.
-In einer PDF aus dem Internet habe ich beispielsweise Informationen zur 
-Typographie entdeckt, die mir ganz interessant erschienen. Also erstelle ich
-mir eine entsprechende Notiz mit Informationen, die später evtl. nützlich
-sein könnten. Ich weiß ja jetzt noch nicht, ob ich davon etwas verwenden 
-möchte und dies am Ende in den Quellen anzugeben gedenke. 
-
-Meine ersten Notizen könnten also etwa so aussehen:
-\begin{tcolorbox}[colback=titlepagecolor!5!white,colframe=titlepagecolor!75!black,title=Notizen]
-PDF-Datei: Christoph Bier - „typokurz – Einige wichtige typografische Regeln“ - 
-Könnte für später ganz interessant sein \\(Datei: /home/Facharbeit/PDFs/
-typokurz.pdf); Autor: Christoph Bier, weitere Infos im PDF
-\tcblower
-Internetseite: https://www.overleaf.com ... Ein Onlineeditor. Vielleicht irgendwo
-erwähnen für Leute, die \LaTeX{} nicht installieren können? 
-\end{tcolorbox}
-Nach und nach taucht man immer tiefer in das Thema ein und nach einiger Zeit 
-kann man über viele Aspekte bereits frei reden und hat Zusammenhänge verstanden. 
-Dinge, die anfangs wichtig erschienen wurden zwischenzeitlich verworfen, dafür 
-kamen neue, andere Aspekte hinzu. 
-
-20\,\%
-
-
-
-
-
-
-
-
-% ------------------- Erklärung --------------------------------
+  Abschließend lässt sich feststellen, dass die Geschichte der Enigma eine zeitlose Lehre enthält:
+  Die Sicherheit eines Verschlüsselungssystems ist stets nur so stark wie sein schwächstes Glied --- und dieses Glied ist häufig nicht die Mathematik, sondern der Mensch.
 
 \newpage
 
 \section*{Erklärung}  % durch das Sternchen fällt die Nummer weg
-Hiermit erkläre ich, dass ich die vorliegende Facharbeit selbstständig 
-angefertigt, keine anderen als die angegebenen Hilfsmittel benutzt und 
-die Stellen der Facharbeit, die im Wortlaut oder im wesentlichen Inhalt 
-von anderen Autoren übernommen wurden, mit genauer Quellenangabe kenntlich 
-gemacht habe.\\
+Hiermit erkläre ich, dass ich die vorliegende Facharbeit selbstständig angefertigt, keine anderen als die angegebenen Hilfsmittel benutzt und die Stellen der Facharbeit, die im Wortlaut oder im wesentlichen Inhalt von anderen Autoren übernommen wurden, mit genauer Quellenangabe kenntlich gemacht habe.\\
 
 \vspace{2cm}
 
@@ -481,7 +448,7 @@ Velbert, den \today
 
 \hspace*{\fill}
 \begin{tabular}{@{}l@{}}\hline
-\makebox[6cm]{Vorname Nachname}
+\makebox[6cm]{Mattis Jung}
 \end{tabular}
 
 
@@ -490,7 +457,7 @@ Velbert, den \today
 % Hier werden die Referenzen, welche mit % \cite[S. 101-107]{rferenzname} 
 % eingetragen werden geschrieben.
 
-%\newpage
+\newpage
 %\bibliography{literatur.bib}
 \printbibliography
 

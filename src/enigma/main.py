@@ -43,38 +43,8 @@ def create_enigma(filePath: str, name: str, startingPosition: str):
     print("Output:", enigma.encode("HELLO WORLD"))
     print(enigma)
 
-"""
-rightRotor.getInputOf(
-    centerRotor.getInputOf(
-        leftRotor.getInputOf(
-            reflector.getOutputOf(
-                leftRotor.getOutputOf(
-                    centerRotor.getOutputOf(
-                        rightRotor.getOutputOf(
-                            input
-                        )
-                    )
-                )
-            )
-        )
-    )
-)
-"""
-
 def main():
-    # Options for the rotors
-    I = ["EKMFLGDQVZNTOWYHXUSPAIBRCJ", "Q"]
-    II = ["AJDKSIRUXBLHWTMCQGZNPYFVOE", "E"]
-    III = ["BDFHJLCPRTXVZNYEIWGAKMUSQO", "V"]
-    IV = ["ESOVPZJAYQUIRHXLNFTGKDCMWB", "J"]
-    V = ["VZBRGITYUPSDNHLXAWMJQOFECK", "Z"]
-
-    A = "EJMZALYXVBWFCRQUONTSPIKHGD"
-    B = "YRUHQSLDPXNGOKMIEBFZCWVJAT"
-    C = "FVPJIAOYEDRZXWGCTKUQSBNMHL"
-    
-    enigma = Enigma(I, II, III, A)
-    print(enigma.type("HELLOWORLD"))
+    create_enigma("vorlage.json", "Enigma-I", "QWE")
 
 if __name__ == "__main__":
     main()

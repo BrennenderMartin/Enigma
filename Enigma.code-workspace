@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../Enigma-machine-simulator"
 		}
 	],
 	"settings": {}
